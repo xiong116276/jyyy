@@ -1,0 +1,199 @@
+body {
+  background-color: #f3f3f3;
+  padding: 1.1rem 0 1rem; }
+
+.header {
+  height: auto; }
+  .header span {
+    font-size: 0.31rem;
+    color: #fff;
+    text-align: center;
+    padding-left: 0.6rem; }
+    .header span em {
+      width: 0.5rem;
+      left: 0; }
+
+.order-logistics {
+  position: relative;
+  background-color: #fff;
+  height: 0.95rem;
+  padding: 0.25rem 0.42rem 0 0.96rem;
+  margin-bottom: 0.2rem; }
+  .order-logistics .icon-logistics {
+    left: 0.42rem;
+    top: 0.25rem;
+    width: 0.34rem;
+    height: 0.27rem; }
+  .order-logistics .text .content {
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    color: #222;
+    margin-bottom: 0.16rem;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .order-logistics .text .time {
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    color: #888; }
+  .order-logistics .icon-arrow-right {
+    margin: auto;
+    width: 0.2rem;
+    top: 0;
+    bottom: 0;
+    right: 0.42rem; }
+
+.order-address {
+  background-color: #fff;
+  padding: 0.25rem 0.42rem 0.2rem;
+  margin-bottom: 0.2rem; }
+  .order-address .address-people {
+    font-size: 0.31rem;
+    line-height: 0.31rem;
+    color: #222;
+    margin-bottom: 0.2rem; }
+    .order-address .address-people span {
+      float: left; }
+    .order-address .address-people .address-phone {
+      margin-left: 0.32rem; }
+  .order-address .address-detail {
+    font-size: 0.26rem;
+    color: #555; }
+
+.order-info {
+  background-color: #fff;
+  padding: 0.25rem 0.42rem;
+  margin-bottom: 0.2rem; }
+  .order-info p {
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    color: #555; }
+    .order-info p:not(:last-child) {
+      margin-bottom: 0.28rem; }
+
+.order-goods .order-shop {
+  position: relative;
+  background-color: #fff;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0 0.42rem 0 0.9rem;
+  border-bottom: 1px solid #e2e2e2; }
+.order-goods .icon-shop {
+  margin: auto;
+  top: 0;
+  left: 0.28rem;
+  bottom: 0; }
+.order-goods .text {
+  font-size: 0.28rem;
+  color: #222;
+  margin-right: 0.15rem; }
+.order-goods .icon-arrow-right-black {
+  margin: auto;
+  width: 0.15rem;
+  top: 0;
+  bottom: 0; }
+.order-goods .icon-arrow-up {
+  margin: auto;
+  width: 0.3rem;
+  top: 0;
+  bottom: 0;
+  right: 0.42rem; }
+  .order-goods .icon-arrow-up.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+.order-goods .item-box {
+  background-color: #fff; }
+.order-goods .goods-item {
+  padding-left: 0; }
+.order-goods .goods-operate {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: right;
+  padding-right: 0.42rem;
+  margin-bottom: 0.2rem; }
+  .order-goods .goods-operate a {
+    display: inline-block;
+    width: 1.64rem;
+    text-align: center;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    border: 1px solid #aaa;
+    font-size: 0.25rem;
+    color: #555;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem; }
+
+.total-widget {
+  padding: 0.3rem 0.42rem 0;
+  background-color: #fff; }
+  .total-widget p {
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    color: #222;
+    padding-bottom: 0.28rem; }
+
+.total-money {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.28rem;
+  color: #222;
+  padding-right: 0.42rem;
+  background-color: #fff;
+  border-top: 1px solid #e2e2e2;
+  margin-bottom: 0.2rem; }
+  .total-money .fr {
+    margin-left: 0.3rem; }
+
+.invoice {
+  padding: 0 0.42rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.28rem;
+  color: #222;
+  margin-bottom: 0.2rem;
+  background-color: #fff; }
+
+.btn-submit-bottom a {
+  width: 50%; }
+.btn-submit-bottom .fl {
+  background-color: #e2e2e2; }
+.btn-submit-bottom .fr {
+  color: #fff; }
+
+.modal-content {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 6.3rem;
+  height: 3.21rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem; }
+  .modal-content .top {
+    height: 2.21rem;
+    line-height: 2.21rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #222; }
+  .modal-content .bottom {
+    border-top: 1px solid #e2e2e2;
+    height: 1rem;
+    line-height: 1rem; }
+    .modal-content .bottom a {
+      width: 50%;
+      height: 0.99rem;
+      text-align: center; }
+      .modal-content .bottom a:first-child {
+        border-right: 1px solid #e2e2e2; }
+
+/*# sourceMappingURL=order-detail.css.map */

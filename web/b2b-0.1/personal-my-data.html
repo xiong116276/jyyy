@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>我的资料</title>
+  <link rel="stylesheet" href="css/weui.min.css">
+  <link rel="stylesheet" href="css/jquery-weui.min.css">
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/personal-my-data.css">
+</head>
+<body>
+  <section class="data-content">
+    <form action="">
+        <div class="input-group head-img">
+          <label for="headImg">头像</label>
+          <div class="head-img-box">
+            <input id="headImg" readonly type="file">
+            <img src="images/personal/personal-head-img.png" alt="">
+          </div>
+          <em class="icon-arrow-right"></em>
+        </div>
+        <div class="input-group">
+          <label for="nickname">昵称</label>
+          <input id="nickname" type="text">
+          <em class="icon-arrow-right"></em>
+        </div>
+        <div class="input-group">
+          <label for="name">姓名</label>
+          <input id="name" type="text">
+          <em class="icon-arrow-right"></em>
+        </div>
+        <div class="input-group">
+          <a href="company-data.html">
+            <label for="companyData">企业资料</label>
+            <div class="company-data">
+              <em class="icon-atced"></em>
+              <input id="companyData" type="text" readonly value="普宁好万家连锁药房">
+            </div>
+            <em class="icon-arrow-right"></em>
+          </a>
+        </div>
+        <div class="input-group">
+          <a href="change-login-password.html">
+            <label for="loginPwd">登录密码</label>
+            <input id="loginPwd" type="text" readonly>
+            <em class="icon-arrow-right"></em>
+          </a>
+        </div>
+        <div class="btn-submit">
+          保 存
+        </div>
+      </form>
+  </section>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script>
+    //图片预览
+    $(".head-img-box").on("change","input",function (e) {
+      var e = e.target;
+      var filelist = e.files;
+      var reader = new FileReader;
+      reader.readAsDataURL(filelist[0]);
+      reader.onload= function () {
+        $(e).siblings("img").attr("src", reader.result);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

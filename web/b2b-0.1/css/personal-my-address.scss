@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import "mixins";
+
+.btn-add-address{
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  background-color: #fff;
+  z-index: 100;
+  a{
+    display: block;
+    width: 80%;
+    margin: 0.1rem auto;
+    text-align: center;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border: 1px solid #ed4529;
+    @include border-radius(0.03rem);
+    color: #ed4529;
+  }
+}
+
+//地址列表
+.address-container{
+  margin-top: 0.6rem;
+  color: #333;
+  .address-item{
+    position: relative;
+    margin: 0.1rem 0.1rem 0;
+    border: 1px solid #6f7070;
+    @include border-radius(0.05rem);
+  }
+  .item-user{
+    line-height: 0.3rem;
+    padding:0 0.5rem 0 0.1rem;
+  }
+  .item-phone{
+    float: right;
+  }
+  .item-address{
+    padding: 0 0.5rem 0.05rem 0.1rem;
+  }
+  .item-operate{
+    position: relative;
+    padding: 0.1rem 0 0.1rem 0.4rem;
+    border-top: 1px solid #6f7070;
+    .icon-select{
+      left: 0.1rem;
+    }
+    a{
+      float: right;
+      margin-right: 0.3rem;
+      color: #333;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

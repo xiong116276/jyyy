@@ -1,0 +1,1452 @@
+@charset "utf-8";
+@import "mixins";
+
+.section-2{
+  &.color-bg{
+    color: #fff;
+    #logo{
+      background-image: url("../images/logo-2.png");
+    }
+    .logo-r{
+      float: left;
+      margin-left: 200px;
+      width: 95px;
+      height: 60px;
+      .text{
+        font-size: 23px;
+        margin: 25px 0 5px 0;
+      }
+      .btn-back-home{
+        text-align: center;
+        color: #f4bfcd;
+        cursor: pointer;
+        border: 1px solid #f4bfcd;
+        @include border-radius(14px);
+      }
+    }
+    .search-sec{
+      width: 400px;
+      top: 35px;
+      .search-form{
+        background-color: #fff;
+        width: 230px;
+        .search-input{
+          background: #fff;
+          width: 175px;
+          padding-left: 10px;
+          border: 0;
+          @include border-radius(0);
+        }
+        .search-btn{
+          width: 45px;
+          text-indent: 0;
+          color: #000;
+          background: #f6f6f6;
+        }
+      }
+      .cart{
+        color: #7a7c81;
+        width: 150px;
+        background-color: #fff;
+        i{
+          float: left;
+          width: 18px;
+          height: 18px;
+          margin: 7px 0 0 10px;
+        }
+        span{
+          float: left;
+          em{
+            position: absolute;
+            width: 19px;
+            height: 23px;
+            right: 20px;
+            top: -10px;
+            color: #fff;
+            line-height: 20px;
+            text-align: center;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.personal-footer{
+  height: 125px;
+}
+
+/******会员中心内容*****/
+.personal-container {
+  width: 1200px;
+  margin: 15px auto 30px;
+}
+
+/*左边栏 会员中心*/
+.left-nav {
+  float: left;
+  width: 235px;
+  height: 655px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  .member-title-img {
+    width:100%;
+    height: 106px;
+    display: block;
+  }
+  .nav-list {
+    width: 215px;
+    padding-left: 20px;
+    float:left;
+    li {
+      float:left;
+      width: 212px;
+      border-left: 3px solid #fff;
+      height: 50px;
+      line-height: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      font-size: 14px;
+      &.active,&:hover{
+        background-color: lighten(#f43737,34%);
+        border-left: 3px solid #f43737;
+        color: #f43737;
+        a {
+          color: #f43737;
+        }
+        .icons-member1 {
+          background-position: -30px -68px;
+        }
+        .icons-member2{
+          background-position: -30px -123px;
+        }
+        .icons-member3{
+          background-position: -30px -347px;
+        }
+        .icons-member4{
+          background-position: -97px -21px;
+        }
+        .icons-member5{
+          background-position: -223px -21px;
+        }
+        .icon-arrow-right{
+          background-position: -58px -8px;
+        }
+      }
+      a{
+        i {
+          position: absolute;
+          left: 30px;
+          top: 18px;
+          display: block;
+          width: 16px;
+          z-index: 22;
+          height: 16px;
+          background-image: url(../images/member.png);
+        }
+        em{
+          position: absolute;
+          right: 20px;
+          top: 18px;
+          display: block;
+          width: 16px;
+          z-index: 22;
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+/*会员图标*/
+.icons-member1 {
+  background-position: 0 -68px;
+}
+.icons-member2{
+  background-position: 0 -123px;
+}
+.icons-member3{
+  background-position: 0 -347px;
+}
+.icons-member4{
+  background-position: -97px 1px;
+}
+.icons-member5{
+  background-position: -223px 0;
+}
+
+/*********右侧内容*********/
+.right-nav {
+  position: relative;
+  width: 950px;
+  min-height: 655px;
+  float: left;
+  margin-left: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  .title{
+    height: 39px;
+    border-bottom: 1px solid #eee;
+    .fl{
+      line-height: 40px;
+      margin-left: 20px;
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+      border-bottom: 3px solid;
+      height: 38px;
+    }
+    .fr{
+      position: relative;
+      line-height: 40px;
+      margin-right: 20px;
+      font-size: 15px;
+      color: #2e61dd;
+      cursor: pointer;
+    }
+  }
+  .order-list-head {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ececec;
+  }
+  .order-list-head li {
+    float: left;
+    width: 150px;
+    color:#3f3f4d;
+  }
+  .page-list{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+  }
+  .empty-page{
+    width: 260px;
+    margin: 100px auto 0;
+    text-align: center;
+    .text{
+      font-size: 15px;
+      margin: 30px;
+      span{
+        color: #2e61dd;
+        cursor: pointer;
+      }
+    }
+  }
+  .input-group-common{
+    margin: 20px 0 0 0;
+    color:#3f3f4d;
+    width: 100%;
+    float:left;
+    position: relative;
+    .input-title {
+      width: 80px;
+      float:left;
+      text-align: right;
+      height: 30px;
+      padding-right: 10px;
+      line-height: 30px
+    }
+    .group-right {
+      float:left;
+      width: 185px;
+    }
+    input {
+      width: 270px;
+      height: 35px;
+      line-height: 35px;
+      padding-left: 10px;
+      border: 1px solid #d7d7d7;
+      -moz-box-shadow: inset 0 2px 8px #e8e8e8;
+      -webkit-box-shadow: inset 0 2px 8px #e8e8e8;
+      box-shadow: inset 0 2px 8px #e8e8e8;
+      color:#bcbfc8;
+      &[type='file']{
+        cursor: pointer;
+      }
+    }
+    select{
+      width: 110px;
+      height: 30px;
+      line-height: 35px;
+      border: 1px solid #d7d7d7;
+      padding-left: 10px;
+      -moz-box-shadow: inset 0 2px 8px #e8e8e8;
+      -webkit-box-shadow: inset 0 2px 8px #e8e8e8;
+      box-shadow: inset 0 2px 8px #e8e8e8;
+      color:#000;
+    }
+    label {
+      padding-right: 10px;
+      font-size: 14px;
+    }
+    textarea {
+      width: 410px;
+      height: 50px;
+      padding: 10px;
+      border: 1px solid #d2d2d2;
+      -moz-box-shadow: inset 0 2px 8px #e8e8e8;
+      -webkit-box-shadow: inset 0 2px 8px #e8e8e8;
+      box-shadow: inset 0 2px 8px #e8e8e8;
+    }
+    .btn-hold {
+      position: absolute;
+      width: 100px;
+      height: 37px;
+      line-height: 33px;
+      font-size: 14px;
+      font-weight:bold;
+      text-align: center;
+      color: #fff;
+      border:none;
+      cursor: pointer;
+    }
+    .icon-add-upload {
+      position: absolute;
+      display: block;
+      background-image: url(../images/member.png);
+      background-position: -95px -197px;
+      width: 22px;
+      height: 22px;
+      margin: 29px;
+      cursor: pointer;
+      z-index: -9999;
+    }
+  }
+}
+.icon-add{
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background-image: url(../images/member.png);
+  background-position: -34px -34px;
+}
+/*********个人中心*********/
+.personal-content {
+  width: 100%;
+  height: 655px;
+  background: url("../images/personal-bg.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .logo-content{
+    margin-top: 90px;
+    text-align: center;
+    .text{
+      margin-top: 10px;
+      font-size: 22px;
+      color: #000;
+    }
+  }
+}
+/*********修改密码*********/
+.reset-psd-container{
+  .content{
+    padding: 35px 0 0 300px;
+    .input-group{
+      position: relative;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 30px;
+      label{
+        float: left;
+        width: 80px;
+        height: 30px;
+        text-align: right;
+        margin-right: 15px;
+        font-size: 15px;
+        color: #000;
+      }
+      input{
+        float: left;
+        width: 190px;
+        height: 28px;
+        outline: none;
+        border: 1px solid #d2d2d2;
+        padding-left: 10px;
+        -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.05);
+        .short{
+          width: 130px;
+        }
+      }
+      .btn-submit{
+        float: left;
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/*********我的地址*********/
+.address-show{
+  .address-list {
+    padding: 30px 25px 50px;
+    height: 645px;
+    .title-detail-address {
+      width: 200px;
+      &+li{
+        width: 100px;
+      }
+    }
+    .list-content {
+      height: 600px;
+      overflow: auto;
+      overflow-x: hidden;
+      -ms-overflow-x: hidden;
+    }
+    .list-box {
+      width: 900px;
+    }
+    .list-item {
+      height: 70px;
+      border-bottom: 1px dotted #ececec;
+      > div {
+        float: left;
+        width: 150px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color:#3f3f4d;
+        &.item-name {
+          color:#3f3f4d;
+          font-weight: bold;
+        }
+        p {
+          height: 27px;
+          line-height: 27px;
+        }
+      }
+      .item-detail-address {
+        width: 160px;
+        position: relative;
+        text-align: left;
+        padding-left: 40px;
+        overflow: hidden;
+      }
+      .icon-address-orange {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        margin-top: -7px;
+        width: 12px;
+        height: 14px;
+        background-image: url(../images/member.png);
+        background-position: -98px -132px;
+      }
+      .item-zip-code {
+        width: 100px;
+      }
+    }
+    .item-operation{
+      p {
+        width: 66px;
+        margin: 20px auto 0;
+      }
+      .default-address {
+        background-color: #2e61dd;
+        a {
+          color: #fff;
+        }
+      }
+      .modify-delete{
+        a {
+          display: inline-block;
+          color: #ea9337;
+          &:first-child {
+            color: #036dde;
+          }
+        }
+        span {
+          display: inline-block;
+          border-left: 1px solid #c3c6cb;
+          margin: 0 6px -2px 4px;
+          height: 13px;
+        }
+      }
+    }
+  }
+  .modal-page{
+    &.new-address{
+      .content{
+        width: 470px;
+        height: 380px;
+        .title{
+          height: 55px;
+        }
+      }
+    }
+  }
+}
+.modal-page{
+  &.delete-prompt{
+    .content{
+      width: 360px;
+      height: 160px;
+      .title{
+        height: 35px;
+        line-height: 35px;
+      }
+      .prompt-info{
+        .text{
+          font-size: 15px;
+          color: #000;
+          margin: 25px 25px 0 25px;
+          em{
+            float: left;
+            width: 32px;
+            height: 32px;
+          }
+          span{
+            float: left;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 10px;
+          }
+        }
+        .btns{
+          position: absolute;
+          bottom: 15px;
+          right: 25px;
+          width: 215px;
+          height: 30px;
+          >div{
+            width: 100px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            @include box-sizing(border-box);
+            @include border-radius(3px);
+          }
+          .fl{
+            color: #fff;
+          }
+          .fr{
+            border: 1px solid;
+            background-color: #f4f4f4;
+          }
+        }
+      }
+    }
+  }
+}
+/*********我的收藏*********/
+.my-collection{
+  .goods-list-container{
+    padding-top: 10px;
+    .goods-memprice{
+      width: 150px;
+    }
+    .goods-operate{
+      width: 325px;
+    }
+    .list-content{
+      .list-item{
+        height: 95px;
+        overflow: hidden;
+        .goods-info{
+          width: 300px;
+          height: 80px;
+          padding-left: 20px;
+        }
+        .goods-img{
+          width: 62px;
+          height: 62px;
+        }
+        .goods-name{
+          margin-top: 10px;
+        }
+        .goods-operate{
+          margin-top: 26px;
+          padding: 0;
+        }
+        .count-edit{
+          margin-left: 0;
+        }
+        .goods-add{
+          margin-left: 15px;
+          width: 160px;
+          .add-collection{
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+/*********我的订单*********/
+.my-order{
+  padding-bottom: 90px;
+  min-height: 565px;
+  .page-list{
+    left: auto;
+    right: 20px;
+  }
+  .title{
+    .order-type{
+      line-height: 40px;
+      margin-left: 20px;
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+      height: 38px;
+      float: left;
+      cursor: pointer;
+      &.active{
+        border-bottom: 3px solid;
+      }
+    }
+  }
+  .order-list-container{
+    .list-item{
+      padding: 20px 20px 0;
+      .item-title{
+        height: 40px;
+        line-height: 40px;
+        background-color: #f4f4f4;
+        >p{
+          float: left;
+          color: #000;
+          font-size: 15px;
+          text-align: center;
+        }
+        .order-goods{
+          text-align: left;
+          .order-time{
+            margin: 0 30px 0 10px;
+          }
+        }
+      }
+      .order-goods{
+        width: 460px;
+        .goods-item{
+          height: 80px;
+          border-bottom: 1px solid #ececec;
+          overflow: hidden;
+          &:last-child{
+            border-bottom: 0;
+          }
+          >div{
+            float: left;
+          }
+        }
+        .goods-img{
+          width: 60px;
+          height: 60px;
+          border: 1px solid #ececec;
+          overflow: hidden;
+          margin: 10px;
+          img{
+            max-width: 100%;
+          }
+        }
+        .goods-text{
+          position: relative;
+          margin: 20px 0 0 0;
+          width: 200px;
+          padding-right: 50px;
+          color: #000;
+          font-size: 15px;
+          .goods-name{
+            width: 100%;
+            @include text-overflow(1);
+          }
+          .goods-count{
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+        .goods-operate{
+          width: 70px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          border: 1px solid #ececec;
+          margin: 15px 0 0 30px;
+          cursor: pointer;
+          color: #7a7c81;
+          @include border-radius(3px);
+        }
+        .btn-more-goods{
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          cursor: pointer;
+          font-size: 15px;
+        }
+      }
+      .order-user{
+        width: 85px;
+        >div{
+          position: absolute;
+          width: 100%;
+          top: 30px;
+          span{
+            margin-left: 10px;
+            float: left;
+          }
+          em{
+            float: left;
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+          }
+        }
+      }
+      .order-total{
+        font-size: 13px;
+        width: 135px;
+        >div{
+          position: absolute;
+          width: 100%;
+          top: 20px;
+          p{
+            text-align: center;
+            margin: 0 10px;
+            line-height: 25px;
+            &:first-child{
+              border-bottom: 1px solid #ececec;
+            }
+          }
+        }
+      }
+      .order-state{
+        width: 100px;
+        >div{
+          position: absolute;
+          width: 100%;
+          top: 20px;
+          p{
+            text-align: center;
+            line-height: 25px;
+          }
+          .btn-order-detail{
+            cursor: pointer;
+          }
+        }
+      }
+      .order-operate{
+        width: 115px;
+        >div{
+          position: absolute;
+          width: 100%;
+          top: 20px;
+          p{
+            width: 70px;
+            margin: 0 auto;
+            height: 25px;
+            border: 1px solid #ececec;
+            text-align: center;
+            line-height: 25px;
+            @include border-radius(3px);
+            cursor: pointer;
+          }
+        }
+      }
+      .item-detail{
+        position: relative;
+        border-bottom: 1px solid #ececec;
+        td{
+          position: relative;
+          border-right: 1px solid #ececec;
+          &:last-child{
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/*********订单详情*********/
+.order-detail{
+  .title{
+    .fl{
+      border: 0;
+      font-weight: normal;
+      .order-time{
+        margin-right: 20px;
+      }
+    }
+    .fr{
+      height: 25px;
+      margin-top: 7px;
+      >div{
+        float: left;
+        width: 70px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        border: 1px solid #ececec;
+        color: #7a7c81;
+        margin-right: 10px;
+        @include border-radius(3px);
+      }
+    }
+  }
+  .order-msg{
+    margin-top: 10px;
+    .msg-item{
+      float: left;
+      padding-left: 20px;
+      &.order-user{
+        width: 420px;
+      }
+      &.order-pay{
+        padding-left: 30px;
+        width: 280px;
+      }
+      &.order-send{
+        width: 180px;
+      }
+      .title{
+        line-height: 30px;
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        border:0;
+      }
+      .content{
+        font-size: 15px;
+        color: #000;
+        p{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .msg-more{
+      float: left;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      .icon-more-d{
+        display: inline-block;
+        width: 6px;
+        height: 8px;
+      }
+    }
+  }
+  .order-goods{
+    margin-top: 20px;
+    .title{
+      height: 40px;
+      line-height: 40px;
+      border: 0;
+      background-color: #f4f4f4;
+      >div{
+        float: left;
+        text-align: center;
+        font-size: 15px;
+      }
+      .goods-info{
+        width: 290px;
+      }
+      .goods-spec{
+        width: 130px;
+      }
+      .goods-num{
+        width: 150px;
+      }
+      .goods-price{
+        width: 100px;
+      }
+      .goods-count{
+        width: 130px;
+      }
+      .goods-operate{
+        width: 150px;
+      }
+    }
+    .goods-info{
+      width: 270px;
+      .goods-img{
+        float: left;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #ececec;
+        overflow: hidden;
+        img{
+          max-width: 100%;
+        }
+      }
+      .goods-name{
+        float: left;
+        margin: 23px 0 0 15px;
+        color: #000;
+        text-align: left;
+        width: 190px;
+        @include text-overflow(1);
+      }
+    }
+    .goods-spec{
+      width: 130px;
+    }
+    .goods-num{
+      width: 150px;
+    }
+    .goods-price{
+      width: 100px;
+    }
+    .goods-count{
+      width: 130px;
+    }
+    .goods-operate{
+      width: 130px;
+      .btn-apply-server{
+        width: 70px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        border: 1px solid #ececec;
+        @include border-radius(3px);
+        margin: 20px 0 0 40px;
+        cursor: pointer;
+      }
+    }
+    .goods-item{
+      height: 60px;
+      margin: 0 20px;
+      padding: 10px 0;
+      overflow: hidden;
+      border-bottom: 1px solid #ececec;
+      >div{
+        float: left;
+        text-align: center;
+        p{
+          margin-top: 23px;
+        }
+      }
+    }
+  }
+  .order-total{
+    margin: 0 20px;
+    .total-detail{
+      border-bottom: 1px solid #ececec;
+    }
+    p{
+      float: right;
+      height: 40px;
+      text-align: right;
+      line-height: 40px;
+      font-size: 15px;
+      color: #000;
+      width: 350px;
+      .title{
+        float: left;
+        border: 0;
+      }
+      .content{
+        float: right;
+      }
+    }
+    .total-money{
+      p{
+        font-weight: bold;
+        width: 180px;
+        .content{
+          font-size: 20px;
+        }
+      }
+    }
+    .btns{
+      margin: 10px 0 40px 0;
+      text-align: right;
+      a{
+        display: inline-block;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        @include border-radius(3px);
+        @include box-sizing(border-box);
+      }
+      .btn-pay{
+        color: #fff;
+        margin-right: 15px;
+      }
+      .btn-cancel{
+        border: 1px solid;
+      }
+    }
+  }
+}
+
+/*********申请售后*********/
+.apply-server{
+  .title{
+    .fr{
+      color: #000;
+      font-size: 14px;
+    }
+  }
+}
+.customer-service {
+  padding: 25px 20px;
+  .item-right {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .item-detail {
+    position: relative;
+    height: 117px;
+    margin-bottom: 10px;
+    .item-img {
+      float: left;
+      width: 115px;
+      height: 115px;
+      line-height: 115px;
+      text-align: center;
+      border: 1px solid #dcdcdc;
+      overflow: hidden;
+      img {
+        max-width: 115px;
+      }
+    }
+    .item-data {
+      float: left;
+      height: 107px;
+      margin: 10px 0 0 20px;
+      position: relative;
+      .bottom {
+        margin-top: 20px;
+        width: 300px;
+      }
+    }
+    .item-name {
+      width: 500px;
+      color: #000;
+      font-size: 15px;
+      @include text-overflow(1);
+    }
+    .item-count {
+      font-size: 15px;
+      margin: 0 40px 0 60px;
+    }
+    .item-price {
+      font-size: 15px;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+.customer-service-form {
+  margin: 25px 0 50px 0;
+  padding-top: 5px;
+  border-top: 1px solid #e2e2e2;
+  .input-group {
+    color: #393946;
+  }
+  .btn-hold {
+    margin-left: 65px;
+  }
+  .input-upload {
+    position: relative;
+  }
+  .upload-item {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    border: 1px dashed #d2d2d2;
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+  .upload-prompt {
+    margin-top: 10px;
+    padding-left: 90px;
+    color:#83868a;
+    font-size: 12px;
+  }
+  .btn-hold {
+    margin-left: 88px;
+    left: 0;
+  }
+}
+/*********我的售后列表*********/
+.my-server{
+  .server-goods{
+    margin: 20px;
+    .title{
+      height: 40px;
+      line-height: 40px;
+      border: 0;
+      background-color: #f4f4f4;
+      >div{
+        float: left;
+        text-align: center;
+        font-size: 15px;
+      }
+      .goods-state{
+        color: #000;
+      }
+    }
+    .goods-num{
+      width: 165px;
+    }
+    .goods-name{
+      width: 235px;
+      @include text-overflow(1);
+    }
+    .goods-state{
+      width: 150px;
+      color: #e57002;
+    }
+    .goods-time{
+      width: 190px;
+    }
+    .goods-operate{
+      width: 165px;
+      p{
+        float: left;
+        cursor: pointer;
+        height: 15px;
+        line-height: 15px;
+        margin-top: 12px;
+        padding: 0 11px;
+      }
+    }
+    .goods-list{
+      .goods-item{
+        border-bottom: 1px solid #ececec;
+        color: #000;
+        font-size: 15px;
+        >div{
+          float: left;
+          text-align: center;
+          height: 40px;
+          line-height: 40px;
+        }
+        .btn-cancel-server{
+          border-right: 1px solid #ececec;
+        }
+        .btn-server-detail{
+
+        }
+      }
+    }
+    .page-list{
+      bottom: 50px;
+      left: auto;
+      right: 25px;
+    }
+  }
+}
+
+/*********售后详情*********/
+.server-detail{
+  .title{
+    .fr{
+      color: #000;
+    }
+  }
+}
+.service-item{
+  .service-detail-content{
+    width: 900px;
+    padding: 0 25px;
+    position: relative;
+  }
+  .service-detail-title {
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+    .apply-time{
+      background-color: #fdf3e8;
+      border: 1px solid #f9d9b7;
+      text-align: left;
+      padding-left: 20px;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 10px;
+    }
+    .state {
+      margin: 30px 0 20px 0;
+      font-weight: bold;
+      color: #202020;
+      font-size: 16px;
+      position: relative;
+      .icon-service-state {
+        display: block;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -113px;
+        margin-top: -11px;
+        background: url(../images/member.png);
+        background-position: -147px -244px;
+      }
+    }
+    .prompt{
+      margin-bottom: 20px;
+    }
+  }
+  .service-goods-item{
+    padding: 20px 0;
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+    .item-img {
+      float: left;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #DCDCDC;
+      position: relative;
+      img {
+        max-width: 80px;
+        max-height: 80px;
+      }
+    }
+    .item-detail {
+      float: left;
+      width: 500px;
+      height: 80px;
+      margin-left: 15px;
+      position: relative;
+      .item-name {
+        margin-top: 10px;
+        line-height: 18px;
+        font-size: 13px;
+        color: #222222;
+        max-height: 50px;
+        overflow: hidden;
+        @include text-overflow(1);
+      }
+      .bottom {
+        margin-top: 10px;
+      }
+    }
+    .item-data {
+      float: right;
+      height: 80px;
+      line-height: 80px;
+    }
+    .item-price {
+      color: #202020;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  .service-summary{
+    .top{
+      padding-top: 10px;
+      border-bottom: 1px solid #ececec;
+    }
+    .bottom{
+      padding-top:10px;
+    }
+    .summary-item{
+      font-size: 14px;
+      position: relative;
+      margin-bottom: 10px;
+      .title{
+        float: left;
+        height: 20px;
+        border: 0;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .content{
+        float: left;
+        img{
+          max-width: 53px;
+          max-height: 53px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  .input-group-common{
+    input{
+      height: 30px;
+    }
+    .btn-hold{
+      position: relative;
+      left: 72px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/*******药检报告********/
+.left-nav{
+  .nav-list{
+    position: relative;
+  }
+}
+.btn-yjbb{
+  position: absolute;
+  width: 235px;
+  height: 66px;
+  left: 0;
+  bottom: -80px;
+  cursor: pointer;
+  background: url("../images/yjbb.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.yjbb-container{
+  .search-condition{
+    margin-top: 25px;
+    padding: 0 20px;
+    height: 35px;
+  }
+  .input-group{
+    float: left;
+    line-height: 35px;
+    color: #000;
+    margin-right: 30px;
+    label{
+      float: left;
+     margin-right: 10px;
+      font-size: 15px;
+    }
+    input{
+      float: left;
+      height: 33px;
+      width: 168px;
+      padding: 0 10px;
+      border: 1px solid #d1d1d1;
+      &#searchCode{
+        width: 65px;
+      }
+    }
+    .code-show{
+      float: left;
+      margin-left: 5px;
+      color: #2e4df3;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .btn-search{
+    float: left;
+    position: relative;
+    width: 60px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    background: url(../images/search-icon2.png) no-repeat 5px center;
+    text-indent: 18px;
+  }
+  .search-list{
+    margin-top: 40px;
+    font-size: 15px;
+    .list-title{
+      margin-top: 20px;
+      height: 35px;
+      line-height: 35px;
+      color: #7a7c81;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #d1d1d1;
+      >div{
+        float: left;
+        text-align: center;
+      }
+    }
+    .list-container{
+      padding: 0 20px 30px;
+      color: #000;
+      .list-item{
+        border-bottom: 1px dotted #000;
+        >div{
+          float: left;
+          text-align: center;
+          height: 45px;
+          line-height: 45px;
+        }
+      }
+    }
+    .goods-num{
+      width: 109px;
+    }
+    .goods-name{
+      width: 200px;
+      @include text-overflow(1);
+    }
+    .goods-guige{
+      width: 80px;
+    }
+    .goods-vender{
+      width: 160px;
+    }
+    .goods-pzwh{
+      width: 120px;
+    }
+    .goods-pihao{
+      width: 125px;
+    }
+    .goods-img-ID{
+      width: 115px;
+    }
+    .btn-download{
+      width: 53px;
+      height: 25px;
+      line-height: 25px;
+      border: 1px solid #d1d1d1;
+      margin: 10px auto 0;
+      cursor: pointer;
+      background: url(../images/icon-download.png) no-repeat 5px center;
+      text-indent: 12px;
+      &:hover{
+        border: 0;
+        color: #fff;
+        background: #f43737 url(../images/icon-download2.png) no-repeat 5px center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

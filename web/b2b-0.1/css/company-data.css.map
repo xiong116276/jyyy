@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,4BAAI;EACF,aAAa,EAAE,iBAAiB;EAChC,8BAAC;IACC,KAAK,EAAE,IAAI;IACX,KAAK,EAAE,GAAG;IACV,UAAU,EAAE,MAAM;IAClB,WAAW,EAAE,MAAM;IACnB,0CAAa;MACX,YAAY,EAAE,iBAAiB;IAEjC,qCAAQ;MACN,KAAK,EAAE,OAAO;MACd,SAAS,EAAE,OAAO",
+"sources": ["company-data.scss"],
+"names": [],
+"file": "company-data.css"
+}

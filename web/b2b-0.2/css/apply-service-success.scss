@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "mixins";
+
+.submit-success{
+  .bg{
+    width: 2.22rem;
+    height: 1.82rem;
+    margin: 0.9rem auto 0.48rem;
+    background: url("../images/personal/service_Image@2x.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .text{
+    text-align: center;
+    font-size: 0.31rem;
+    margin-top: 0.28rem;
+    line-height: 0.31rem;
+  }
+  .btn-bottom{
+    margin-top: 0.89rem;
+    padding: 0 1.65rem;
+  }
+  .btn{
+    float: left;
+    width: 1.9rem;
+    height: 0.56rem;
+    text-align: center;
+    line-height: 0.56rem;
+    color: #f43737;
+    border: 1px solid #f43737;
+    font-size: 0.28rem;
+    @include border-radius(0.4rem);
+    &:first-child{
+      margin-right: 0.4rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+

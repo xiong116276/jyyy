@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,iCAAW;EACT,aAAa,EAAE,iBAAiB;EAChC,mCAAC;IACC,KAAK,EAAE,IAAI",
+"sources": ["goods-list.scss"],
+"names": [],
+"file": "goods-list.css"
+}

@@ -1,0 +1,234 @@
+@charset "utf-8";
+@import "mixins";
+body{
+  padding-bottom: 0.4rem;
+}
+/***订单地址***/
+.top-bg-img{
+  width: 100%;
+  height: 0.05rem;
+  img{
+    vertical-align: top;
+  }
+}
+.address-content{
+  position: relative;
+  padding: 0.1rem 0.5rem 0.1rem 0.8rem;
+}
+.address-name{
+  position: absolute;
+  left: 0.2rem;
+  top: 0.1rem;
+  font-size: 0.16rem;
+  width: 0.6rem;
+  @include text-overflow(2);
+}
+.address-default{
+  position: absolute;
+  left: 0.2rem;
+  bottom: 0.2rem;
+  color: #ed4529;
+  padding: 0 0.02rem;
+  border: 1px solid #ed4529;
+  @include border-radius(0.03rem);
+}
+.address-detail{
+  @include text-overflow(3);
+}
+.icon-arrow-right{
+  right: 0.2rem;
+  top: 0.4rem;
+}
+/***订单地址  结束***/
+
+/***订单内容***/
+.order-content{
+
+}
+/***订单店铺***/
+.order-store{
+  border-top: 0.1rem solid #f1f1f1;
+  .store-top{
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.5rem;
+  }
+  .goods-item{
+    border-bottom: 1px solid #d2d2d2;
+    margin: 0;
+  }
+}
+.img-store{
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: 0.1rem;
+  left: 0.2rem;
+  img{
+    vertical-align: top;
+  }
+}
+/***订单店铺  结束***/
+.order-column{
+  @include border-division(top);
+}
+.order-row{
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 1px solid #d2d2d2;
+  position: relative;
+  .title{
+    float: left;
+    padding-left: 0.2rem;
+  }
+  input{
+    float: right;
+    text-align: right;
+    border: 0;
+    width: 2.5rem;
+    margin-right: 0.4rem;
+    height: 0.39rem;
+    outline: none;
+  }
+  .icon-arrow-right{
+    width: 0.07rem;
+    top: 0.1rem;
+  }
+  .total{
+    float: right;
+    margin-right: 0.2rem;
+    font-size: 0.16rem;
+    color: #ed4529;
+  }
+}
+
+/***订单内容  结束***/
+
+/***订单提交底部***/
+.order-submit-footer{
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-top: 1px solid #d2d2d2;
+  font-size: 0.16rem;
+
+  .order-total{
+    float: left;
+    width: 70%;
+    padding-left: 0.1rem;
+    span{
+      color: #ed4529;
+    }
+  }
+  .btn-order-submit{
+    float: left;
+    width: 30%;
+    text-align: center;
+    background-color: #ed4529;
+    color: #fff;
+  }
+}
+/***订单提交底部  结束***/
+
+/***weui弹出页***/
+.open-popup{
+  display: block;
+}
+.weui-popup__container{
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  z-index: 100;
+  .weui-popup__modal{
+    background-color: #fff;
+    padding: 0.6rem 0;
+  }
+}
+.popup-top{
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  top: 0.1rem;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+
+  a{
+    display: inline-block;
+    width: 85%;
+    border: 1px solid #ed4529;
+    color: #ed4529;
+    text-align: center;
+    font-size: 0.16rem;
+    @include border-radius(0.03rem);
+  }
+}
+.popup-content{
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  top: 0.6rem;
+  bottom: 0.5rem;
+  border-top: 1px solid #d2d2d2;
+  .address-content{
+    border-bottom: 1px solid #d2d2d2;
+  }
+}
+.popup-bottom{
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  bottom: 0;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background-color: #ed4529;
+  color: #fff;
+}
+
+//添加地址
+.add-address{
+  .popup-content{
+    top: 0;
+  }
+  .popup-bottom{
+    border-top: 1px solid #d2d2d2;
+    a{
+      float: left;
+      width: 50%;
+      text-align: center;
+    }
+    a.close-popup{
+      background-color: #fff;
+    }
+    a.open-popup{
+      background-color: #ed4529;
+      color: #fff;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

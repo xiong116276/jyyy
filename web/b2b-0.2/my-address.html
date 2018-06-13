@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>我的地址</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/my-address.css">
+</head>
+<body>
+
+<section class="address-list">
+  <div class="item-box">
+    <div class="address-item">
+      <p class="address-user clearfix">
+        <span class="address-name">颜付乾</span>
+        <span class="address-phone">13527700031</span>
+      </p>
+      <p class="address-detail">
+        广东省广州市天河区科韵路信息港C1栋
+      </p>
+      <p class="address-default">
+        <a class="icon-select icon-select-true" href="javascript:void(0)"></a>
+        设为默认
+      </p>
+      <a class="icon-edit" href="javascript:void(0)"></a>
+    </div>
+    <a class="btn-delete" href="javascript:void(0)">删除</a>
+  </div>
+  <div class="item-box">
+    <div class="address-item">
+      <p class="address-user clearfix">
+        <span class="address-name">颜付乾</span>
+        <span class="address-phone">13527700031</span>
+      </p>
+      <p class="address-detail">
+        广东省广州市天河区科韵路信息港C1栋
+      </p>
+      <p class="address-default">
+        <a class="icon-select" href="javascript:void(0)"></a>
+        设为默认
+      </p>
+      <a class="icon-edit" href="javascript:void(0)"></a>
+    </div>
+    <a class="btn-delete" href="javascript:void(0)">删除</a>
+  </div>
+</section>
+<div class="btn-submit-bottom" href="add-address.html">
+  添加一个新地址
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+  $(".icon-select").on("click",function () {
+    $(this).toggleClass("icon-select-true").
+    parents(".item-box").siblings().find(".icon-select").removeClass("icon-select-true");
+  });
+  // 左滑删除效果
+  var leftSlip = function (itemParents,item) {
+    var moved = 0;
+    var startX = 0;
+    $(itemParents).on("touchstart",item,function () {
+      startX = event.changedTouches[0].clientX;
+      moved = 0;
+    });
+    $(itemParents).on("touchmove",item,function () {
+      var moveX = event.changedTouches[0].clientX;
+      moved = moveX - startX;
+    });
+    $(itemParents).on("touchend",item,function (e) {
+      var target =e.currentTarget;
+      if(moved < -50){
+        $(target).animate({left:"-1.5rem"},"fast")
+          .parents(".item-box").siblings().find(item).animate({left:"0"},"fast");
+      }
+      if(moved > 50){
+        $(target).animate({left:"0"},"fast");
+      }
+    });
+  };
+  leftSlip(".address-list",".address-item");
+</script>
+</body>
+</html>

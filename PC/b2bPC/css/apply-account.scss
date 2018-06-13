@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import "mixins";
+
+.login-container{
+  .apply-form{
+    height: 465px;
+    .apply-input{
+      input{
+        padding-left: 80px!important;
+      }
+      .code{
+        width: 180px;
+      }
+      .btn-get-code{
+        position: absolute;
+        width: 125px;
+        height: 38px;
+        text-align: center;
+        line-height: 38px;
+        border: 1px solid;
+        right: 0;
+        cursor: pointer;
+        @include border-radius(3px);
+      }
+      span{
+        position: absolute;
+        margin: 10px 0 0 10px;
+        display: inline-block;
+        width: 65px;
+        height: 20px;
+        z-index: 10;
+        line-height: 20px;
+        font-size: 15px;
+        border-right: 1px solid #cdcdcd;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

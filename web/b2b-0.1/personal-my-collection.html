@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>我的收藏</title>
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/weui.min.css">
+  <link rel="stylesheet" href="css/jquery-weui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/personal-my-collection.css">
+</head>
+<body>
+
+<section class="collection-container">
+  <div class="weui-cells">
+    <!--左滑删除-->
+    <div class="weui-cell weui-cell_swiped">
+      <div class="weui-cell__bd">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+          </div>
+          <a class="icon-add-cart" href="cart.html"></a>
+        </div>
+      </div>
+      <div class="weui-cell__ft">
+        <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+      </div>
+    </div>
+    <div class="weui-cell weui-cell_swiped">
+      <div class="weui-cell__bd">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+          </div>
+          <a class="icon-add-cart" href="cart.html"></a>
+        </div>
+      </div>
+      <div class="weui-cell__ft">
+        <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+      </div>
+    </div>
+    <div class="weui-cell weui-cell_swiped">
+      <div class="weui-cell__bd">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+          </div>
+          <a class="icon-add-cart" href="cart.html"></a>
+        </div>
+      </div>
+      <div class="weui-cell__ft">
+        <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script>
+  $('.weui-cell_swiped').swipeout();
+  $(".weui-cell .delete-swipeout").on("click",function () {
+    $(this).parents(".weui-cell").remove();
+  })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

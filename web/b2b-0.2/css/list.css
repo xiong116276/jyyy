@@ -1,0 +1,103 @@
+.list-footer span:before, .list-footer span:after {
+  content: "";
+  display: inline-block;
+  border-top: 1px solid #c6c6c6;
+  width: 2.4rem;
+  margin-bottom: 0.1rem; }
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc; }
+
+.list-content {
+  margin-top: 0.91rem; }
+
+.list-item {
+  height: 3.13rem;
+  padding: 0.42rem 0.3rem 0;
+  border-bottom: 1px solid #ccc; }
+  .list-item .item-left {
+    float: left;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0.3rem 0.25rem 0 0;
+    text-align: center;
+    overflow: hidden; }
+  .list-item .item-right {
+    float: left;
+    width: 4.85rem; }
+  .list-item .item-text > p {
+    margin-bottom: 0.16rem;
+    color: #555;
+    font-size: 0.25rem;
+    line-height: 0.25rem; }
+  .list-item .item-text .item-name {
+    font-size: 0.28rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-weight: bold;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .list-item .item-text .item-price {
+    float: left;
+    color: #f43737;
+    margin-right: 0.2rem; }
+  .list-item .item-text .item-stock {
+    float: left; }
+  .list-item .item-operation {
+    height: 0.56rem;
+    line-height: 0.56rem; }
+    .list-item .item-operation .item-count {
+      float: left;
+      border: 1px solid #888;
+      height: 0.56rem;
+      overflow: hidden;
+      -webkit-border-radius: 0.05rem;
+      -moz-border-radius: 0.05rem;
+      border-radius: 0.05rem; }
+      .list-item .item-operation .item-count a {
+        float: left;
+        width: 0.62rem;
+        text-align: center;
+        height: 0.54rem;
+        line-height: 0.5rem; }
+      .list-item .item-operation .item-count .btn-reduce {
+        border-right: 1px solid #888; }
+      .list-item .item-operation .item-count .btn-add {
+        border-left: 1px solid #888; }
+      .list-item .item-operation .item-count input {
+        float: left;
+        width: 1.02rem;
+        text-align: center;
+        height: 0.52rem;
+        line-height: 0.53rem;
+        border: 0;
+        color: #f43737;
+        font-size: 0.31rem;
+        outline: none; }
+    .list-item .item-operation .btn-add-cart {
+      float: right;
+      font-size: 0.28rem;
+      background-color: #f43737;
+      color: #fff;
+      width: 1.9rem;
+      text-align: center;
+      -webkit-border-radius: 0.4rem;
+      -moz-border-radius: 0.4rem;
+      border-radius: 0.4rem; }
+
+.list-footer {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #eee;
+  color: #a2a2a2; }
+  .list-footer span:before {
+    margin-right: 0.15rem; }
+  .list-footer span:after {
+    margin-left: 0.15rem; }
+
+/*# sourceMappingURL=list.css.map */

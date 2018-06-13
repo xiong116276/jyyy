@@ -1,0 +1,92 @@
+body {
+  padding-top: 1rem;
+  background-color: #f3f3f3; }
+
+.header {
+  height: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2; }
+  .header .order-type {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    color: #222;
+    font-size: 0.31rem; }
+    .header .order-type.active {
+      color: #f43737; }
+
+.list-item {
+  background-color: #fff;
+  margin-top: 0.2rem; }
+
+.list-title {
+  position: relative;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0 0.42rem 0 0.9rem;
+  border-bottom: 1px solid #e2e2e2; }
+  .list-title .icon-shop {
+    margin: auto;
+    top: 0;
+    left: 0.28rem;
+    bottom: 0; }
+  .list-title .list-shop {
+    font-size: 0.28rem;
+    color: #222;
+    margin-right: 0.15rem; }
+  .list-title .order-state {
+    color: #f43737;
+    float: right; }
+  .list-title .icon-arrow-right-black {
+    margin: auto;
+    width: 0.15rem;
+    top: 0;
+    bottom: 0; }
+
+.goods-item {
+  padding-left: 0; }
+  .goods-item .goods-specification span {
+    float: left;
+    margin-right: 0.8rem; }
+  .goods-item .goods-specification .goods-count {
+    margin-right: 0; }
+  .goods-item .icon-cart {
+    width: 0.5rem;
+    height: 0.5rem;
+    right: 0.42rem;
+    bottom: 0.35rem;
+    border: 1px solid #a2a2a2;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    -webkit-background-size: 0.35rem 0.35rem;
+    background-size: 0.35rem 0.35rem; }
+
+.list-total {
+  background-color: #fff; }
+  .list-total .total-item {
+    height: 1rem;
+    line-height: 1rem;
+    text-align: right;
+    padding-right: 0.42rem;
+    border-bottom: 1px solid #e2e2e2; }
+  .list-total .btn-default {
+    display: inline-block;
+    width: 1.64rem;
+    text-align: center;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    border: 1px solid #aaa;
+    font-size: 0.25rem;
+    color: #555;
+    margin-left: 0.15rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem; }
+    .list-total .btn-default.active {
+      color: #f43737;
+      border: 1px solid #f43737; }
+
+/*# sourceMappingURL=my-order.css.map */

@@ -1,0 +1,29 @@
+@charset "utf-8";
+//盒模型
+@mixin box-sizing($type){
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+//倒角
+@mixin border-radius($size){
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+//文字第几行隐藏
+@mixin text-overflow($line){
+  @if $line==1{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }@else{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    -webkit-line-clamp: $line;
+    text-overflow: ellipsis;
+  }
+}

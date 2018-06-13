@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>购物车</title>
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<!--头部header-->
+<header class="header">
+  <p class="title">购物车</p>
+  <a class="right btn-edit" href="javascript:void(0)">编辑</a>
+</header>
+<!--购物车-->
+<section class="cart-container">
+  <!--购物车有商品-->
+  <div class="cart-goods hide">
+    <div class="goods-list">
+      <div class="item-box">
+        <div class="goods-item">
+          <a class="icon-select" href="javascript:void(0)"></a>
+          <div class="goods-info clearfix">
+            <div class="goods-img">
+              <img src="images/product-01.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">
+                ￥9.00
+                <span class="goods-count">×1</span>
+              </p>
+            </div>
+            <div class="item-count hide">
+              <form action="">
+                <a class="btn-reduce" href="javascript:void(0)">-</a>
+                <input  type="number" value="1"/>
+                <a class="btn-add" href="javascript:void(0)">+</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a class="btn-delete" href="javascript:void(0)">删除</a>
+      </div>
+      <div class="item-box">
+        <div class="goods-item">
+          <a class="icon-select" href="javascript:void(0)"></a>
+          <div class="goods-info clearfix">
+            <div class="goods-img">
+              <img src="images/product-01.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">
+                ￥9.00
+                <span class="goods-count">×1</span>
+              </p>
+            </div>
+            <div class="item-count hide">
+              <form action="">
+                <a class="btn-reduce" href="javascript:void(0)">-</a>
+                <input  type="number" value="1"/>
+                <a class="btn-add" href="javascript:void(0)">+</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a class="btn-delete" href="javascript:void(0)">删除</a>
+      </div>
+      <div class="item-box">
+        <div class="goods-item">
+          <a class="icon-select" href="javascript:void(0)"></a>
+          <div class="goods-info clearfix">
+            <div class="goods-img">
+              <img src="images/product-01.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">
+                ￥9.00
+                <span class="goods-count">×1</span>
+              </p>
+            </div>
+            <div class="item-count hide">
+              <form action="">
+                <a class="btn-reduce" href="javascript:void(0)">-</a>
+                <input  type="number" value="1"/>
+                <a class="btn-add" href="javascript:void(0)">+</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a class="btn-delete" href="javascript:void(0)">删除</a>
+      </div>
+    </div>
+    <div class="goods-total">
+      <a class="icon-select" href="javascript:void(0)"></a>
+      <p class="cart-choose-number">全选(0)</p>
+      <p class="cart-total">合计:<span>￥59.5</span></p>
+      <a class="btn-cart-footer" href="javascript:void(0)">结算</a>
+    </div>
+  </div>
+  <!--购物车为空-->
+  <div class="cart-empty">
+    <div class="empty-top">
+      <div class="empty-img">
+        <img src="images/cart/cart-empty.png" alt="">
+      </div>
+      <p class="top-text">是时候为健康囤点货了</p>
+      <a class="btn-empty" href="javascript:void(0)">去商场看看</a>
+    </div>
+    <!--推荐商品-->
+    <div class="recommend-content">
+      <p class="recommend-top">
+        <span>
+          <em class="icon-hot"></em>
+          推荐热品
+        </span>
+      </p>
+      <div class="recommend-list clearfix">
+        <div class="recommend-item">
+          <a class="item-img" href="javascript:void(0)">
+            <img src="images/zhongxi_01.jpg" alt="">
+          </a>
+        </div>
+        <div class="recommend-item">
+          <a class="item-img" href="javascript:void(0)">
+            <img src="images/zhongxi_02.jpg" alt="">
+          </a>
+        </div>
+        <div class="recommend-item">
+          <a class="item-img" href="javascript:void(0)">
+            <img src="images/zhongxi_01.jpg" alt="">
+          </a>
+        </div>
+        <div class="recommend-item">
+          <a class="item-img" href="javascript:void(0)">
+            <img src="images/zhongxi_02.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--底部footer-->
+<footer class="footer">
+  <a class="item" href="javascript:void(0)">
+    <em class="icon-home"></em>
+    <p>首页</p>
+  </a>
+  <a class="item" href="javascript:void(0)">
+    <em class="icon-classify"></em>
+    <p>分类</p>
+  </a>
+  <a class="item active" href="javascript:void(0)">
+    <em class="icon-cart"></em>
+    <p>购物车</p>
+  </a>
+  <a class="item" href="javascript:void(0)">
+    <em class="icon-mine"></em>
+    <p>我的</p>
+  </a>
+</footer>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+  // 判断购物车是否为空
+  $(function () {
+    if($(".cart-goods .goods-item").length > 0){
+      $(".cart-empty").addClass("hide");
+      $(".cart-goods").removeClass("hide");
+      $(".btn-edit").removeClass("hide");
+    }else{
+      $(".cart-empty").removeClass("hide");
+      $(".cart-goods").addClass("hide");
+      $(".btn-edit").addClass("hide");
+    }
+  });
+  // 编辑按钮
+  $(".header .right").on("click",function () {
+    if($(this).html()==="编辑"){
+      $(".cart-goods .item-count").removeClass("hide")
+        .siblings(".goods-text").find(".goods-count").addClass("hide");
+      $(this).html("完成");
+      $(".btn-cart-footer").html("删除");
+    }else if($(this).html()==="完成"){
+      $(".cart-goods .item-count").addClass("hide")
+        .siblings(".goods-text").find(".goods-count").removeClass("hide");
+      $(this).html("编辑");
+      $(".btn-cart-footer").html("结算");
+    }
+  });
+  // 商品选择按钮
+  var goodsChoose = {
+    init:function () {
+      this.goodsItem();
+      this.goodsAll();
+    },
+    // 购物车底部结算按钮样式
+    btnCartFooter: function () {
+      if($(".icon-select").hasClass("icon-select-true")){
+        $(".btn-cart-footer").addClass("btn-active");
+      }else{
+        $(".btn-cart-footer").removeClass("btn-active");
+      }
+    },
+    // 每个商品选择按钮
+    goodsItem : function () {
+      $(".goods-list .icon-select").on("click",e => {
+        var e = e.target;
+        $(e).toggleClass("icon-select-true");
+
+        // 改变底部全选按钮
+        $(".goods-list .icon-select").length ===
+        $(".goods-list .icon-select-true").length?
+          $(".goods-total .icon-select").addClass("icon-select-true"):
+          $(".goods-total .icon-select").removeClass("icon-select-true");
+
+        // 结算按钮样式
+        this.btnCartFooter();
+      });
+    },
+    // 购物车底部全选
+    goodsAll :function () {
+      $(".goods-total .icon-select").on("click",e => {
+        var e = e.target;
+        var state = $(e).hasClass("icon-select-true");
+        if(state === false){
+          $(".icon-select").addClass("icon-select-true");
+        }else if(state === true){
+          $(".icon-select").removeClass("icon-select-true");
+        }
+        // 结算按钮样式
+        this.btnCartFooter();
+      });
+    }
+  };
+  goodsChoose.init();
+  // 左滑删除效果
+  var leftSlip = function () {
+    var moved = 0;
+    var startX = 0;
+    $(".cart-goods").on("touchstart",".goods-item",function () {
+      startX = event.changedTouches[0].clientX;
+      moved = 0;
+    });
+    $(".cart-goods").on("touchmove",".goods-item",function () {
+      var moveX = event.changedTouches[0].clientX;
+      moved = moveX - startX;
+    });
+    $(".cart-goods").on("touchend",".goods-item",function (e) {
+      var target =e.currentTarget;
+      if(moved < -50){
+        $(target).animate({left:"-1.5rem"},"fast")
+          .parents(".item-box").siblings().find(".goods-item").animate({left:"0"},"fast");
+      }
+      if(moved > 50){
+        $(target).animate({left:"0"},"fast");
+      }
+    });
+  };
+  leftSlip();
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import "mixins";
+
+.data-content{
+  .input-group{
+    input{
+      width: 1.7rem;
+    }
+    a{
+      display: block;
+      color: #333;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .head-img{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    .head-img-box{
+      position: absolute;
+      width: 0.5rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      right: 0.4rem;
+      top: 0.1rem;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .icon-arrow-right{
+      top: 0.26rem;
+    }
+    input{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+}
+//企业资料
+.company-data{
+  position: relative;
+  float: right;
+  .icon-atced{
+    left: -0.45rem;
+  }
+}
+
+
+

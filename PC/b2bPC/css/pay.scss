@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import "mixins";
+
+.pay-wrapper {
+  width: 1200px;
+  margin: 35px auto 0;
+  min-height: 550px;
+  h2 {
+    font-size: 18px;
+    line-height: 32px;
+    width:360px;
+    margin: 40px auto 30px;
+    .icon-order-02{
+      float: left;
+      width: 28px;
+      height: 32px;
+    }
+    span{
+      float: left;
+      margin-left: 20px;
+    }
+  }
+  .pay-tab {
+    margin-top:20px;
+    padding-left: 20px;
+    color:#3f3f4d;
+    font-size: 14px;
+    height: 36px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+    line-height: 35px;
+    float:left;
+    width: 1180px;
+  }
+  .pay-order-table {
+    margin-top: 15px;
+    float:left;
+    width: 1200px;
+    position: relative;
+    table{
+      width: 100%;
+      border-right:1px solid #e5e5e5;
+      border-bottom:1px solid #e5e5e5;
+      td{
+        color:#3f3f4d;
+        line-height:40px;
+        display: block;
+        float:left;
+        border-left:1px solid #e5e5e5;
+        border-top:1px solid #e5e5e5;
+        a {
+          color:#036dde;
+        }
+        &.he-th {
+          color:#83868a;
+          em {
+            color:#f67a00;
+          }
+          span {
+            color:#036dde;
+          }
+        }
+      }
+    }
+  }
+  .pay-style-list {
+    width: 100%;
+    margin-top: 32px;
+    float:left;
+    .pay-style-item3 {
+      padding: 0 30px 0 60px;
+      height: 35px;
+      border:1px solid #e5e5e5;
+      line-height: 35px;
+      font-size: 14px;
+      color:#3f3f4d;
+      float:left;
+      position: relative;
+      margin-right: 30px;
+      cursor: pointer;
+      i{
+        display: block;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        left: 23px;
+        top: 25%;
+      }
+      .bank-icon{
+        width: 35px;
+      }
+      &.active{
+        &:after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 14px;
+          height: 14px;
+          background-image: url("../images/checked.png");
+        }
+      }
+    }
+  }
+  .paynow-btn {
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: 100%;
+    float:left;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    .p-btn {
+      width: 170px;
+      height: 42px;
+      color: #fff;
+      border:none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .modal-page{
+    .title{
+      em{
+        right: -200px;
+      }
+    }
+    .pay-result{
+      width: 570px;
+      height: 300px;
+      .text{
+        padding: 0 25px;
+        p{
+          font-size: 15px;
+          color: #000;
+          margin-top: 20px;
+        }
+      }
+      .btns{
+        margin: auto;
+        position: absolute;
+        width: 220px;
+        height: 40px;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 14px;
+        >div{
+          float: left;
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          @include box-sizing(border-box);
+          @include border-radius(3px);
+          cursor: pointer;
+        }
+        .btn-pay-success{
+          color: #fff;
+          margin-right: 16px;
+        }
+        .btn-pay-again{
+          border: 1px solid;
+          background-color: #f4f4f4;
+        }
+      }
+    }
+  }
+}
+.pay-ewm {
+  display: none;
+  text-align: center;
+  min-height: 500px;
+  padding-top:85px;
+  font-size: 14px;
+  .pay-ewm-img {
+    border:1px solid #e5e5e5;
+    margin: 15px auto 0;
+    width: 219px;
+    height: 219px;
+    img {
+      width: 100%;
+    }
+  }
+  p{
+    padding-top: 40px;
+  }
+}
+
+
+

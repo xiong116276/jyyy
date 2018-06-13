@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>注册</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/weui.min.css">
+  <link rel="stylesheet" href="css/jquery-weui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/apply-account.css">
+</head>
+<body>
+  <section class="apply-account-container">
+    <div class="top">
+      <ul class="clearfix">
+        <li class="active">企业信息</li>
+        <li>资质文件</li>
+        <li>完成</li>
+      </ul>
+    </div>
+    <div class="apply-account-content">
+      <!--企业信息-->
+      <div class="content-tab data-content">
+        <form action="">
+          <div class="input-group">
+            <label for="applyType">企业类型</label>
+            <input id="applyType" readonly type="text" placeholder="请选择" name="applyType">
+            <em class="icon-arrow-right"></em>
+          </div>
+          <div class="input-group">
+            <label for="applyApellation">企业名称</label>
+            <input id="applyApellation" type="text" placeholder="请输入企业名称">
+          </div>
+          <div class="input-group">
+            <label for="applyArea">所在地区</label>
+            <input id="applyArea" readonly type="text" placeholder="请选择">
+            <em class="icon-arrow-right"></em>
+          </div>
+          <div class="input-group">
+            <label for="applyAddress">地址</label>
+            <input id="applyAddress" type="text" placeholder="请输入详细地址">
+          </div>
+          <div class="input-group">
+            <label for="applyName">联系人</label>
+            <input id="applyName" type="text" placeholder="请输入联系人">
+          </div>
+          <div class="input-group">
+            <label for="applyPhone">手机号</label>
+            <input id="applyPhone" type="tel" placeholder="请输入手机号">
+          </div>
+          <div class="input-group">
+            <label for="applyCode">验证码</label>
+            <input class="apply-code" id="applyCode" type="text" placeholder="请输入验证码">
+            <a class="btn-get-code color-red" href="javascript:void(0)">
+              获取验证码
+            </a>
+            <p class="resend hide">重新发送<span>30</span>秒</p>
+          </div>
+        </form>
+        <div class="btn-next">
+          下一步
+        </div>
+      </div>
+      <!--资质文件-->
+      <div class="content-tab hide">
+        <form action="">
+          <div class="qualification clearfix">
+            <div class="qfc-item">
+              <span>营业执照</span>
+              <div class="upload-img">
+                <img src="images/bg-add-list.png" alt="">
+                <input type="file">
+              </div>
+              <em class="icon-arrow-right"></em>
+            </div>
+            <div class="qfc-item">
+              <span>药品经营许可证</span>
+              <div class="upload-img">
+                <img src="images/bg-add-list.png" alt="">
+                <input type="file">
+              </div>
+              <em class="icon-arrow-right"></em>
+            </div>
+            <div class="qfc-item">
+              <span>GSP证件</span>
+              <div class="upload-img">
+                <img src="images/bg-add-list.png" alt="">
+                <input type="file">
+              </div>
+              <em class="icon-arrow-right"></em>
+            </div>
+          </div>
+          <div class="id-upload">
+            <p class="title">
+              <em class="id-title-left"></em>
+              <span>身份证件</span>
+              <em class="id-title-right"></em>
+            </p>
+            <div class="id-content clearfix">
+              <div class="id-item">
+                <div class="img-box">
+                  <input type="file">
+                  <img src="images/bg-add-id.png" alt="">
+                </div>
+                <p>正面</p>
+              </div>
+              <div class="id-item">
+                <div class="img-box">
+                  <input type="file">
+                  <img src="images/bg-add-id.png" alt="">
+                </div>
+                <p>反面</p>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="btn-qfc clearfix">
+          <div class="btn-next">
+            下一步
+          </div>
+          <div class="btn-prev">
+            上一步
+          </div>
+        </div>
+      </div>
+      <!--完成-->
+      <div class="content-tab hide">
+        <div class="complete">
+          <div class="complete-bg-img"></div>
+          <p class="text-submit-success">提交成功!</p>
+          <p class="text-wait">资料等待平台审核</p>
+          <a class="btn-next" href="login.html">确认</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  <script src="js/city-picker.min.js"></script>
+  <script>
+    var applyAccount = {
+      init: function () {
+        this.applyType();
+        this.applyArea();
+        this.btnNextFun();
+        this.btnPrevFun();
+        this.imgShowFun();
+        this.resendFun();
+      },
+      //注册类型选择
+      applyType:function () {
+        $("#applyType").picker({
+          title: "请选择类型",
+          cols: [
+            {
+              textAlign: 'center',
+              values: ['批发企业', '药店', '医疗机构', '商行其他']
+            }
+          ]
+        });
+      },
+      //地区选择
+      applyArea:function () {
+        $("#applyArea").cityPicker({
+          title: "请选择地区"
+        });
+      },
+      //下一步切换
+      btnNextFun:function () {
+        $(".btn-next").on("click",function (e) {
+          if($("#applyType").val().length > 0){
+            var e = e.target;
+            var index = $(e).parents(".content-tab").index();
+            $(e).parents(".content-tab").next().removeClass("hide").siblings().addClass("hide");
+            $($(".apply-account-container .top li")[index + 1]).addClass("active");
+          }
+        }.bind(this));
+      },
+      // 上一步
+      btnPrevFun:function () {
+        $(".btn-prev").on("click",function () {
+          var index = $(this).parents(".content-tab").index();
+          $(this).parents(".content-tab").prev().removeClass("hide").siblings().addClass("hide");
+          $($(".apply-account-container .top li")[index]).removeClass("active");
+        })
+      },
+      //图片提交预览
+      imgShowFun:function () {
+        $("input[type = 'file']").on("change",function (e) {
+          var e = e.target;
+          var filelist = e.files;
+          var reader = new FileReader;
+          reader.readAsDataURL(filelist[0]);
+          reader.onload= function () {
+            $(e).siblings("img").attr("src", reader.result);
+          }
+        })
+      },
+      //重新发送验证码倒计时
+      resendFun:function () {
+        $(".btn-get-code").on("click",function (e) {
+          var e = e.target;
+          $(e).addClass("hide").siblings(".resend").removeClass("hide");
+          this.countDown(30);
+        }.bind(this));
+      },
+      countDown:function (n) {
+        var timer = setInterval(function () {
+          n--;
+          $(".resend span").html(n);
+          if(n <= 0){
+            clearInterval(timer);
+            $(".btn-get-code").removeClass("hide");
+            $(".resend").addClass("hide");
+            $(".resend span").html(30);
+          }
+        },1000);
+      }
+    };
+    applyAccount.init();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

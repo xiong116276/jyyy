@@ -1,0 +1,48 @@
+@charset "utf-8";
+//背景图
+@mixin bg-img($url,$position,$size){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: $position;
+  -webkit-background-size: $size;
+  background-size: $size;
+}
+//倒角
+@mixin border-radius($size){
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+//文字第几行隐藏
+@mixin text-overflow($line){
+  @if $line==1{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }@else{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    -webkit-line-clamp: $line;
+    text-overflow: ellipsis;
+  }
+}
+//边框分割线
+@mixin border-division ($direction){
+  border-#{$direction}: 0.1rem solid #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
