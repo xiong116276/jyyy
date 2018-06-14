@@ -47,8 +47,8 @@
       .btn-take-up{
         &.active{
           &:after{
-            filter:progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
             -ms-filter:progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
+            filter:progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
           }
         }
       }
