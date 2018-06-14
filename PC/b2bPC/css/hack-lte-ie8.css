@@ -22,8 +22,8 @@
     -pie-background: #04aa58; }
 
 .goods-list-container-new .search-condition .item-choose .btn-take-up.active:after {
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
-  -ms-filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand'); }
+  -ms-filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand'); }
 .goods-list-container-new .show-goods-content .goods-item {
   background-color: #fff; }
   .goods-list-container-new .show-goods-content .goods-item:hover {
