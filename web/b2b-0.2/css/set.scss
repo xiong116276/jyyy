@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "mixins";
+
+body{
+  background-color: #f3f3f3;
+}
+.set-widget{
+  background-color: #fff;
+  .item-text{
+    font-size: 0.32rem;
+    color: #f43737;
+  }
+}
+
+
+
+
+
+

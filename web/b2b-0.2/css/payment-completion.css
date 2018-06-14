@@ -1,0 +1,41 @@
+.complete {
+  margin-top: 0.9rem; }
+
+.complete-bg-img {
+  margin: 0 auto;
+  width: 2.22rem;
+  height: 1.82rem;
+  background-image: url("../images/tips_right@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.text-submit-success {
+  font-size: 0.5rem;
+  color: #04b130;
+  font-weight: bold;
+  margin-top: 0.48rem;
+  line-height: 0.5rem;
+  text-align: center; }
+
+.text-wait {
+  text-align: center;
+  font-size: 0.31rem;
+  margin-top: 0.28rem;
+  line-height: 0.31rem; }
+
+.btn-completion {
+  display: block;
+  width: 6rem;
+  height: 0.86rem;
+  margin: 0.9rem auto 0;
+  text-align: center;
+  line-height: 0.86rem;
+  background-color: #f43737;
+  color: #fff;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem; }
+
+/*# sourceMappingURL=payment-completion.css.map */

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>购物车</title>
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<!--header头部-->
+<header class="header">
+  <a class="icon-left icon-news" href="javascript:void(0)"></a>
+  <div class="center-elm">
+    购物车
+  </div>
+  <a class="btn-right btn-edit" href="javascript:void(0)">
+    编辑
+  </a>
+</header>
+<!--购物车-->
+<section class="cart-container">
+  <!--购物车有商品-->
+  <div class="cart-goods hide">
+    <div class="cart-store">
+      <p class="store-title">
+        <a class="icon-select" href="javascript:void(0)"></a>
+        鹏源药业
+        <a class="icon-arrow-right" href="javascript:void(0)"></a>
+      </p>
+      <div class="store-goods">
+        <div class="goods-item">
+          <a class="icon-select" href="javascript:void(0)"></a>
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+            <div class="goods-edit hide">
+              <a class="edit-btn edit-reduce" href="javascript:void(0)">-</a>
+              <input class="edit-input" type="number" value="1">
+              <a class="edit-btn edit-add" href="javascript:void(0)">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-store">
+      <p class="store-title">
+        <a class="icon-select" href="javascript:void(0)"></a>
+        鹏源药业
+        <a class="icon-arrow-right" href="javascript:void(0)"></a>
+      </p>
+      <div class="store-goods">
+        <div class="goods-item">
+          <a class="icon-select" href="javascript:void(0)"></a>
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+            <div class="goods-edit hide">
+              <a class="edit-btn edit-reduce" href="javascript:void(0)">-</a>
+              <input class="edit-input" type="number" value="1">
+              <a class="edit-btn edit-add" href="javascript:void(0)">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="goods-item">
+          <a class="icon-select" href="javascript:void(0)"></a>
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+            <div class="goods-edit hide">
+              <a class="edit-btn edit-reduce" href="javascript:void(0)">-</a>
+              <input class="edit-input" type="number" value="1">
+              <a class="edit-btn edit-add" href="javascript:void(0)">+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <a class="icon-select" href="javascript:void(0)"></a>
+      <p class="cart-choose-number">全选(0)</p>
+      <p class="cart-total">￥0.00</p>
+      <a class="btn-cart-footer" href="javascript:void(0)">结算</a>
+    </div>
+  </div>
+  <!--购物车为空-->
+  <div class="cart-empty">
+    <div class="empty-top">
+      <div class="empty-img">
+        <img src="images/cart/cart-empty.png" alt="">
+      </div>
+      <a class="btn-empty" href="home.html">去商场看看</a>
+    </div>
+    <!--推荐商品-->
+    <section class="product-recommend">
+      <p class="recommend-title">
+        <em class="icon-recommend"></em> 药师推荐
+      </p>
+      <div class="recommend-content">
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-02.png" alt="">
+            <p class="product-describe">
+              肾宝片(汇仁)，调和阴阳，温阳补肾，扶正固本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-01.png" alt="">
+            <p class="product-describe">
+              中智草精华淫羊藿破壁草本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-02.png" alt="">
+            <p class="product-describe">
+              肾宝片(汇仁)，调和阴阳，温阳补肾，扶正固本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-01.png" alt="">
+            <p class="product-describe">
+              中智草精华淫羊藿破壁草本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-02.png" alt="">
+            <p class="product-describe">
+              肾宝片(汇仁)，调和阴阳，温阳补肾，扶正固本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-01.png" alt="">
+            <p class="product-describe">
+              中智草精华淫羊藿破壁草本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-02.png" alt="">
+            <p class="product-describe">
+              肾宝片(汇仁)，调和阴阳，温阳补肾，扶正固本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="javascript:void(0)">
+            <img class="product-img" src="images/product/product-01.png" alt="">
+            <p class="product-describe">
+              中智草精华淫羊藿破壁草本
+            </p>
+            <p class="product-price">￥59.50</p>
+          </a>
+          <div class="btn-login-hide">
+            <p>登录可见</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!--footer底部menu-->
+<footer class="footer">
+  <ul class="clearfix">
+    <li>
+      <a href="home.html">
+        <img src="images/icon-home.png" alt="">
+        <p>首页</p>
+      </a>
+    </li>
+    <li>
+      <a href="classify.html">
+        <img src="images/icon-clas.png" alt="">
+        <p>分类</p>
+      </a>
+    </li>
+    <li class="active">
+      <a href="cart.html">
+        <img src="images/icon-cart-pre.png" alt="">
+        <p>购物车</p>
+      </a>
+    </li>
+    <li>
+      <a href="personal.html">
+        <img src="images/icon-mine.png" alt="">
+        <p>我的</p>
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+  // 判断购物车是否为空
+  $(function () {
+    if($(".cart-goods .goods-item").length > 0){
+      $(".cart-empty").addClass("hide");
+      $(".cart-goods").removeClass("hide");
+      $(".btn-edit").removeClass("hide");
+    }else{
+      $(".cart-empty").removeClass("hide");
+      $(".cart-goods").addClass("hide");
+      $(".btn-edit").addClass("hide");
+    }
+  });
+  //购物车编辑按钮
+    $(".btn-edit").on("click",function () {
+      if($(this).html().indexOf("编辑") > -1 ){
+        $(".goods-edit").removeClass("hide");
+        $(".goods-specification").addClass("hide");
+        $(this).html("完成");
+        $(".btn-cart-footer").html("删除");
+      }else{
+        $(".goods-edit").addClass("hide");
+        $(".goods-specification").removeClass("hide");
+        $(this).html("编辑");
+        $(".btn-cart-footer").html("结算");
+      }
+    });
+  // 购物车选择按钮
+    var goodsChoose = {
+      init:function () {
+        this.goodsItem();
+        this.storeItem();
+        this.goodsAll();
+      },
+      // 购物车底部结算按钮样式
+      btnCartFooter: function () {
+        if($(".icon-select").hasClass("icon-select-true")){
+          $(".btn-cart-footer").addClass("btn-active");
+        }else{
+          $(".btn-cart-footer").removeClass("btn-active");
+        }
+      },
+      // 每个商品选择按钮
+      goodsItem : function () {
+        $(".store-goods .icon-select").on("click",function (e) {
+          var e = e.target;
+          $(e).toggleClass("icon-select-true");
+
+          // 改变底部全选按钮
+          $(".cart-store .store-goods .icon-select").length ===
+          $(".cart-store .store-goods .icon-select-true").length?
+            $(".cart-footer .icon-select").addClass("icon-select-true"):
+            $(".cart-footer .icon-select").removeClass("icon-select-true");
+
+          // 判断一家店铺下的商品选中情况
+          $(e).parents(".store-goods").find(".icon-select-true").length ===
+          $(e).parents(".store-goods").find(".icon-select").length?
+            $(e).parents(".cart-store").find(".store-title .icon-select").addClass("icon-select-true"):
+            $(e).parents(".cart-store").find(".store-title .icon-select").removeClass("icon-select-true");
+          // 结算按钮样式
+          this.btnCartFooter();
+        }.bind(this));
+
+      },
+      // 每个店铺选择按钮
+      storeItem: function () {
+        $(".store-title .icon-select").on("click",function (e) {
+          var e = e.target;
+          var state = $(e).hasClass("icon-select-true");
+
+          $(e).toggleClass("icon-select-true");
+          // 改变该店铺下的商品选择
+          $(e).parents(".cart-store").find(".store-goods .icon-select").each(function () {
+            if(state === false){
+              $(this).addClass("icon-select-true");
+            }else if(state === true){
+              $(this).removeClass("icon-select-true");
+            }
+          });
+
+          // 改变底部全选按钮
+          $(".store-title .icon-select").parents(".cart-store").length ===
+          $(".store-title .icon-select-true").parents(".cart-store").length?
+            $(".cart-footer .icon-select").addClass("icon-select-true"):
+            $(".cart-footer .icon-select").removeClass("icon-select-true");
+
+          // 结算按钮样式
+          this.btnCartFooter();
+        }.bind(this));
+      },
+      // 购物车底部全选
+      goodsAll :function () {
+        $(".cart-footer .icon-select").on("click",function (e) {
+          var e = e.target;
+          var state = $(e).hasClass("icon-select-true");
+          if(state === false){
+            $(".icon-select").addClass("icon-select-true");
+          }else if(state === true){
+            $(".icon-select").removeClass("icon-select-true");
+          }
+          // 结算按钮样式
+          this.btnCartFooter();
+        }.bind(this));
+      }
+    };
+    goodsChoose.init();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

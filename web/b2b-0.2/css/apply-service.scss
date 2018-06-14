@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "mixins";
+
+body{
+  background-color: #f3f3f3;
+  padding: 1.1rem 0 1rem;
+}
+.header{
+  height: auto;
+  span{
+    font-size: 0.36rem;
+    color: #fff;
+    text-align: center;
+    em{
+      width: 0.5rem;
+      left: 0;
+    }
+  }
+}
+@include color-placeholder(#aaa);
+.feedback-text-input{
+  height: 2.6rem;
+  padding: 0.4rem 0.42rem;
+  background-color: #fff;
+  margin-bottom: 0.2rem;
+  .title{
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    color: #222;
+    margin-bottom: 0.25rem;
+  }
+
+  textarea{
+    width: 100%;
+    height: 1.3rem;
+    border: 0;
+    outline: none;
+    font-size: 0.28rem;
+  }
+}
+.img-upload-container{
+  background-color: #fff;
+  padding: 0.3rem 0.42rem 0 0.02rem;
+  .upload-item{
+    float: left;
+    position: relative;
+    width: 1.3rem;
+    text-align: center;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    border: 0.02rem solid #e5e5e5;
+    margin: 0 0 0.3rem 0.4rem;
+    img{
+      max-height: 90%;
+    }
+    input{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: 0;
+      outline: none;
+      opacity: 0;
+    }
+  }
+}
+.upload-prompt{
+  padding: 0.1rem 0.42rem 0;
+  font-size: 0.25rem;
+  line-height: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

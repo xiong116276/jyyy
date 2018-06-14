@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>提交订单</title>
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/order-submit.css">
+</head>
+<body>
+  <section class="address-choose">
+    <p class="address-user">
+      <span class="address-name">赵敏敏</span>
+      <span class="address-phone">182****5420</span>
+      <span class="address-default">默认</span>
+    </p>
+    <p class="address-detail">
+      广东省广州市天河区科韵路信息港C1903
+    </p>
+    <em class="icon-address"></em>
+    <em class="icon-arrow-right"></em>
+  </section>
+  <section class="goods-list">
+    <div class="goods-item">
+      <div class="goods-info clearfix">
+        <div class="goods-img">
+          <img src="images/product-01.png" alt="">
+        </div>
+        <div class="goods-text">
+          <p class="goods-describe">
+            葛仙翁 下火王固体饮料 10g*16袋
+          </p>
+          <p class="goods-specification">
+            规格: 10g*16袋
+          </p>
+          <p class="goods-price">
+            ￥9.00
+            <span class="goods-count">×1</span>
+          </p>
+        </div>
+        <div class="item-count hide">
+          <form action="">
+            <a class="btn-reduce" href="javascript:void(0)">-</a>
+            <input  type="number" value="1"/>
+            <a class="btn-add" href="javascript:void(0)">+</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="goods-total">
+    <p class="total-widget">
+      <span class="title">商品合计</span>
+      <span class="content">￥ 96.5</span>
+    </p>
+    <p class="total-widget">
+      <span class="title">运费</span>
+      <span class="content">￥ 0.00</span>
+    </p>
+    <p class="total-widget">
+      <span class="title">备注</span>
+      <input class="order-remark" type="text">
+      <em class="icon-arrow-right"></em>
+    </p>
+  </section>
+  <footer class="footer">
+    <p class="total">合计: <span>￥859.5</span></p>
+    <a class="btn-submit" href="javascript:void(0)">确认提交</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>我的订单</title>
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/personal-my-order.css">
+
+</head>
+<body>
+
+  <section class="header">
+    <a class="order-type active" href="javascript:void(0)">全部</a>
+    <a class="order-type" href="javascript:void(0)">待支付</a>
+    <a class="order-type" href="javascript:void(0)">待收货</a>
+    <a class="order-type" href="javascript:void(0)">待发货</a>
+    <a class="order-type" href="javascript:void(0)">待评价</a>
+  </section>
+  <!--有订单-->
+  <section class="order-list hide">
+    <div class="list-store">
+      <div class="order-title">
+        <a class="icon-shop" href="javascript:void(0)"></a>
+        鹏源药业
+        <span class="state">待付款</span>
+      </div>
+      <div class="order-goods">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+      </div>
+      <div class="order-total">
+        共1件商品 实付款:￥25.0
+      </div>
+      <div class="order-operate">
+        <a class="btn-operate" href="javascript:void(0)">取消</a>
+        <a class="btn-operate" href="javascript:void(0)">支付</a>
+      </div>
+    </div>
+    <div class="list-store">
+      <div class="order-title">
+        <a class="icon-shop" href="javascript:void(0)"></a>
+        鹏源药业
+        <span class="state">待发货</span>
+      </div>
+      <div class="order-goods">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+      </div>
+      <div class="order-total">
+        共1件商品 实付款:￥25.0
+      </div>
+      <div class="order-operate">
+        <a class="btn-operate" href="javascript:void(0)">取消</a>
+        <a class="btn-operate" href="javascript:void(0)">提醒发货</a>
+      </div>
+    </div>
+    <div class="list-store">
+      <div class="order-title">
+        <a class="icon-shop" href="javascript:void(0)"></a>
+        鹏源药业
+        <span class="state">待收货</span>
+      </div>
+      <div class="order-goods">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+      </div>
+      <div class="order-total">
+        共1件商品 实付款:￥25.0
+      </div>
+      <div class="order-operate">
+        <a class="btn-operate" href="javascript:void(0)">确认收货</a>
+      </div>
+    </div>
+    <div class="list-store">
+      <div class="order-title">
+        <a class="icon-shop" href="javascript:void(0)"></a>
+        鹏源药业
+        <span class="state">待评价</span>
+      </div>
+      <div class="order-goods">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+      </div>
+      <div class="order-total">
+        共1件商品 实付款:￥25.0
+      </div>
+      <div class="order-operate">
+        <a class="btn-operate" href="javascript:void(0)">评价</a>
+      </div>
+    </div>
+  </section>
+  <!--无订单-->
+  <section class="order-empty">
+    <div class="empty-img"></div>
+    <p>暂无订单</p>
+  </section>
+
+  <script src="js/jquery-3.1.1.js"></script>
+  <script>
+    $(function () {
+      if($(".order-list .list-store").length > 0){
+        $(".order-list").removeClass("hide");
+        $(".order-empty").addClass("hide");
+      }else{
+        $(".order-list").addClass("hide");
+        $(".order-empty").removeClass("hide");
+      }
+    })
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

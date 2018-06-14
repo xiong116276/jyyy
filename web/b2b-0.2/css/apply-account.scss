@@ -1,0 +1,270 @@
+@charset "utf-8";
+@import "mixins";
+$red-color : #f43737;
+.apply-account-container{
+  .top{
+    background-color: $red-color;
+    font-size: 0.31rem;
+    height: 0.84rem;
+    li{
+      float: left;
+      width: calc(100%/3);
+      height: 0.65rem;
+      line-height: 0.65rem;
+      text-align: center;
+      position: relative;
+      color: #950202;
+      font-size: 0.31rem;
+      border-bottom: 0.03rem solid #950202;
+      &.active{
+        color: #fff;
+        border-bottom: 0.03rem solid #fff;
+        &:after{
+          content:"";
+          display: block;
+          position: relative;
+          width: 0.15rem;
+          height: 0.15rem;
+          @include border-radius(50%);
+          background-color: #fff;
+          margin: 0 auto;
+          bottom: 0.075rem;
+        }
+      }
+    }
+  }
+}
+.apply-account-content{
+  position: relative;
+  width: 100%;
+  //企业信息
+  .data-content{
+    .input-group{
+      height: 1.1rem;
+      line-height: 1.1rem;
+      border-bottom: 1px solid #c9c9c9;
+      margin: 0 0.42rem;
+      position: relative;
+      label{
+        display: inline-block;
+        float: left;
+        width: 20%;
+        font-size: 0.31rem;
+        color: #555555;
+        line-height: 1.06rem;
+      }
+      input{
+        width: 70%;
+        border: 0;
+        outline: none;
+        font-size: 0.31rem;
+        float: left;
+        line-height: 1.06rem;
+        margin-left: 0.4rem;
+        //获取验证码
+        &.apply-code{
+          width: 30%;
+        }
+      }
+      .btn-get-code{
+        position: absolute;
+        right: 0;
+        top: 0.26rem;
+        width: 40%;
+        text-align: center;
+        height: 0.55rem;
+        line-height: 0.55rem;
+        border-left: 1px solid #c9c9c9;
+      }
+    }
+  }
+  //右箭头
+  .icon-arrow-right{
+    right: 0;
+    top: 0.33rem;
+    width: 0.14rem;
+  }
+  .btn-next{
+    display: block;
+    width: 6rem;
+    margin: 0.9rem auto 0;
+    text-align: center;
+    height: 0.86rem;
+    line-height: 0.86rem;
+    background-color: $red-color;
+    color: #fff;
+    @include border-radius(0.4rem);
+    font-size: 0.31rem;
+  }
+  .btn-qfc{
+    width: 6.5rem;
+    margin: 0.9rem auto 0.5rem;
+    >div{
+      float: right;
+    }
+    .btn-next{
+      width: 3rem;
+      margin: 0 0 0 0.5rem;
+    }
+  }
+  .btn-prev{
+    display: block;
+    width: 3rem;
+    text-align: center;
+    height: 0.86rem;
+    line-height: 0.86rem;
+    background-color: #c9c9c9;
+    color: #fff;
+    @include border-radius(0.4rem);
+    font-size: 0.31rem;
+  }
+  //验证码重新发送
+  .resend{
+    position: absolute;
+    right: 0;
+    top: 0.26rem;
+    width: 40%;
+    text-align: center;
+    height: 0.55rem;
+    line-height: 0.55rem;
+    border-left: 1px solid #c9c9c9;
+    color: #ccc;
+  }
+  //资质文件
+  .qualification{
+    .qfc-item{
+      position: relative;
+      margin: 0 0.42rem;
+      height: 1.6rem;
+      line-height: 1.6rem;
+      border-bottom: 1px solid #c9c9c9;
+      span{
+        color: #555;
+        line-height: 1.6rem;
+      }
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+    .upload-img{
+      float: right;
+      position: relative;
+      line-height: 1.6rem;
+      width: 1.28rem;
+      text-align: center;
+      height: 100%;
+      margin-right: 0.4rem;
+      overflow: hidden;
+      input[type='file']{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+    .icon-arrow-right{
+      top: 0.6rem;
+    }
+  }
+  //身份证件上传
+  .id-upload{
+    @include border-division("top");
+    .title{
+      margin: 0.42rem auto;
+      width: 3.3rem;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      font-size: 0.31rem;
+      text-align: center;
+      em{
+        display: inline-block;
+        width: 0.9rem;
+        height: 0.3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .id-title-left{
+      float: left;
+      background-image: url("../images/id_title_left_image@2x.png");
+    }
+    .id-title-right{
+      float: right;
+      background-image: url("../images/id_title_rigth_image@2x.png");
+    }
+
+    .id-content{
+      margin: 0 0.75rem;
+      .id-item{
+        float: left;
+        &:nth-child(2n){
+          margin-left: 0.3rem;
+        }
+      }
+      .img-box{
+        position: relative;
+        width: 2.82rem;
+        height: 2.05rem;
+        text-align: center;
+        line-height: 2.05rem;
+        overflow: hidden;
+        input{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+      p{
+        font-size: 0.31rem;
+        color: #ccc;
+        text-align: center;
+      }
+    }
+  }
+  //完成
+  .complete{
+    margin-top: 0.9rem;
+    p{
+      text-align: center;
+    }
+  }
+  .complete-bg-img{
+    margin: 0 auto;
+    width: 2.22rem;
+    height: 1.82rem;
+    @include bg-img("../images/tips_right@2x.png",center,contain);
+  }
+  .text-submit-success{
+    font-size: 0.5rem;
+    color: #04b130;
+    font-weight: bold;
+    margin-top: 0.48rem;
+    line-height: 0.5rem;
+  }
+  .text-wait{
+    font-size: 0.31rem;
+    margin-top: 0.28rem;
+    line-height: 0.31rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

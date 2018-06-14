@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import "mixins";
+body{
+  background-color: #f3f3f3;
+}
+@include color-placeholder(#ccc);
+.input-group{
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0 0.42rem;
+  overflow: hidden;
+  margin: 0;
+  height: auto;
+  label{
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: 0.31rem;
+    color: #222;
+  }
+  input{
+    position: absolute;
+    font-size: 0.31rem;
+    border: 0;
+    outline: none;
+    font-weight: normal;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0.42rem;
+    width: 5.4rem;
+  }
+  textarea{
+    width: 100%;
+    margin-top: -0.15rem;
+    margin-bottom: 0.2rem;
+    border: 0;
+    outline: none;
+    font-size: 0.31rem;
+    resize: none;
+  }
+}
+.address-default{
+  margin-top: 0.2rem;
+  .icon-select{
+    margin: auto;
+    right: 0.42rem;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

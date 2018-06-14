@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>意见反馈</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+
+  <section class="feedback-content">
+    <form action="">
+      <div class="feedback-text-input">
+        <p class="title">
+          <span class="color-red">*</span>
+          意见反馈
+        </p>
+        <textarea name="feedback" style="resize: none" placeholder="点击填写意见反馈内容"></textarea>
+      </div>
+      <div class="img-upload-container clearfix">
+        <form action="">
+          <div class="upload-item">
+            <img src="images/product-03.png" alt="">
+            <a class="icon-delete-red" href="javascript:void(0)"></a>
+          </div>
+          <div class="upload-item btn-add-img">
+            <img src="images/personal/add_pic@2x.png" alt="">
+            <input type="file">
+          </div>
+        </form>
+      </div>
+      <div class="btn-submit-bottom">
+        提交反馈
+      </div>
+    </form>
+  </section>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+  var addImg = {
+    init: function () {
+      this.addFun();
+      this.deleteFun();
+    },
+    element : function (tag,attrs,html) {
+      var element = document.createElement(tag);
+      // 判断第二个参数是属性还是内容
+      if(typeof(attrs) === "string"){
+        html = attrs;
+        attrs = null;
+      }
+      // 判断是否有属性
+      if(attrs !== undefined){
+        for(var attr in attrs){
+          element.setAttribute(attr,attrs[attr]);
+        }
+      }
+      // 判断是否有内容
+      if(html !== undefined){
+        element.innerHTML = html;
+      }
+      return element;
+    },
+    addFun :function () {
+      $("input[type = 'file']").on("change",function (e) {
+        var e = e.target;
+        var filelist = e.files;
+        var reader = new FileReader;
+        reader.readAsDataURL(filelist[0]);
+        reader.onload= function () {
+          var newDiv = this.element(
+            "div",
+            {
+              "class":"upload-item"
+            },
+            "<img src="+reader.result+" alt=\"\">\n" +
+            "<a class=\"icon-delete-red\" href=\"javascript:void(0)\"></a>"
+          );
+          $(newDiv).insertBefore($(".btn-add-img"));
+        }.bind(this);
+      }.bind(this));
+    },
+    deleteFun:function () {
+      $(".img-upload-container").on("click",".icon-delete-red",function (e) {
+        var e = e.target;
+        $(e).parents(".upload-item").remove();
+      });
+    }
+  };
+  addImg.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "mixins";
+
+.payment-item{
+  height: 1.4rem;
+  margin-left: 0.42rem;
+  line-height: 1.4rem;
+  font-size: 0.31rem;
+  color: #222;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 0.1rem;
+  a{
+    display: block;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    width: 7.1rem;
+    position: relative;
+    padding-left: 1.05rem;
+  }
+  em{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    @include bg-img("../images/payment/icon-WeChat-pay.png",center,contain);
+    top: 0.3rem;
+    left: 0;
+  }
+  .icon-WeChat-pay{
+    background-image: url("../images/payment/wechat_pay@2x.png");
+  }
+  .icon-alipay{
+    background-image: url("../images/payment/alipay@2x.png");
+  }
+  .icon-UnionPay{
+    background-image: url("../images/payment/unionpay@2x.png");
+  }
+  .icon-cash{
+    background-image: url("../images/payment/Cash-on-delivery@2x.png");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>添加地址</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/weui.min.css">
+  <link rel="stylesheet" href="css/jquery-weui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/add-address.css">
+</head>
+<body>
+
+<section class="address-content">
+  <form action="">
+    <div class="input-group">
+      <label for="addressPeople">联系人</label>
+      <input id="addressPeople" type="text" name="addressPeople" placeholder="请输入联系人姓名">
+    </div>
+    <div class="input-group">
+      <label for="addressPhone">手机号</label>
+      <input id="addressPhone" type="tel" name="addressPhone" placeholder="请输入手机号码">
+    </div>
+    <div class="input-group">
+      <label for="addressArea">地区</label>
+      <input id="addressArea" type="text" name="addressArea" placeholder="请选择地区" readonly>
+    </div>
+    <div class="input-group">
+      <label for="addressDetail">详细地址</label>
+      <textarea name="addressDetail" id="addressDetail" placeholder="请输入详细的地址，为确保您的物品不会丢失"></textarea>
+    </div>
+    <div class="input-group address-default">
+      <label>设置为默认地址</label>
+      <a class="icon-select" href="javascript:void(0)"></a>
+    </div>
+  </form>
+</section>
+<div class="btn-submit-bottom" href="add-address.html">
+  保存
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/city-picker.js"></script>
+<script>
+  //地区选择
+  var applyArea=function () {
+    $("#addressArea").cityPicker({
+      title: "请选择地区"
+    });
+  }
+  applyArea();
+
+  $(".icon-select").on("click",function () {
+    $(this).toggleClass("icon-select-true");
+  })
+</script>
+</body>
+</html>

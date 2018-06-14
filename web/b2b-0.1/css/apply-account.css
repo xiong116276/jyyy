@@ -1,0 +1,62 @@
+.apply-account-container .top {
+  background-color: #d7d7d7;
+  font-size: 0.14rem; }
+.apply-account-container li {
+  float: left;
+  width: calc(100%/3);
+  height: 0.25rem;
+  line-height: 0.25rem;
+  text-align: center;
+  position: relative; }
+  .apply-account-container li.active {
+    color: #ff0066; }
+  .apply-account-container li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0.02rem;
+    width: 0.1rem;
+    height: 0.2rem;
+    background-image: url("../images/icon-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain; }
+  .apply-account-container li:last-child:after {
+    content: "";
+    display: none; }
+
+.apply-account-content {
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  top: 0.25rem;
+  bottom: 0;
+  overflow-y: scroll; }
+  .apply-account-content .data-content {
+    height: 100%; }
+  .apply-account-content .btn-submit {
+    letter-spacing: 0.15rem;
+    text-indent: 0.15rem; }
+  .apply-account-content .complete {
+    padding-top: 1rem; }
+    .apply-account-content .complete > p {
+      text-align: center; }
+  .apply-account-content .complete-content {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto 0.4rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #333; }
+    .apply-account-content .complete-content p {
+      font-family: 'Arial Normal', 'Arial';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.7rem;
+      color: #333333;
+      text-align: center;
+      line-height: 1rem; }
+
+/*# sourceMappingURL=apply-account.css.map */

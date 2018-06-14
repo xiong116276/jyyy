@@ -1,0 +1,24 @@
+body {
+  background-color: #f3f3f3; }
+
+.item-box {
+  position: relative; }
+
+.goods-item {
+  z-index: 10;
+  background-color: #fff;
+  padding-left: 0; }
+
+.icon-cart {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 0.42rem;
+  bottom: 0.35rem;
+  border: 1px solid #a2a2a2;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  -webkit-background-size: 0.35rem 0.35rem;
+  background-size: 0.35rem 0.35rem; }
+
+/*# sourceMappingURL=my-collection.css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>意见反馈</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/personal-feedback.css">
+</head>
+<body>
+  <section class="feedback-content">
+    <p class="title">
+      <span class="color-red">*</span>意见反馈
+    </p>
+    <form action="">
+      <textarea name="feedback" id="feedback" placeholder="填写意见反馈内容" style="resize: none"></textarea>
+      <div class="update-content clearfix">
+        <div class="update-group">
+          <input type="file" name="upImg">
+          <img src="images/personal/add-pic.png" alt="">
+        </div>
+      </div>
+    </form>
+  </section>
+  <!--提交按钮-->
+  <a class="btn-submit" href="javascript:void(0)">
+    提交反馈
+  </a>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script>
+    //图片预览
+    $(".update-group").on("change","input",function (e) {
+      var e = e.target;
+      var filelist = e.files;
+      var reader = new FileReader;
+      reader.readAsDataURL(filelist[0]);
+      reader.onload= function () {
+        $(e).siblings("img").attr("src", reader.result);
+      }
+    });
+  </script>
+</body>
+</html>

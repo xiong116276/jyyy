@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>订单提交</title>
+  <script src="js/rem.min.js"></script>
+  <link rel="stylesheet" href="css/weui.min.css">
+  <link rel="stylesheet" href="css/jquery-weui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/order-submit.css">
+</head>
+<body>
+
+  <!--订单地址-->
+  <section class="order-submit-address">
+    <div class="top-bg-img">
+      <img src="images/order/address-bg.png" alt="">
+    </div>
+    <div class="address-content">
+      <a href="javascript:void(0)" class="open-popup" data-target="#addressPopup">
+        <p class="address-name">颜凌文</p>
+        <p class="address-default">默认</p>
+        <div class="address-info">
+          <p class="address-phone">18300763503</p>
+          <p class="address-detail">
+            广东省揭阳市普宁市流沙北街道
+            体育园西小区 39幢 好万家药房连锁有限公司 二楼体育园西小区 39幢 好万家药房连锁有限公司 二楼
+          </p>
+          <em class="icon-arrow-right"></em>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!--订单内容-->
+  <section class="order-content">
+    <!--订单店铺-->
+    <div class="order-store">
+      <p class="store-top">
+        <em class="icon-top-left"></em>
+        <em class="img-store">
+          <img src="images/icon-shop.png" alt="">
+        </em>
+        鹏源药业
+      </p>
+      <!--订单店铺商品-->
+      <div class="store-goods">
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+        <div class="goods-item">
+          <div class="goods-info">
+            <div class="goods-img">
+              <img src="images/product/product-02.png" alt="">
+            </div>
+            <div class="goods-text">
+              <p class="goods-describe">
+                葛仙翁 下火王固体饮料 10g*16袋
+              </p>
+              <p class="goods-specification">
+                规格: 10g*16袋
+              </p>
+              <p class="goods-price">￥9.00</p>
+            </div>
+            <div class="goods-count">×1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--金额-->
+    <div class="order-column">
+      <!--订单备注-->
+      <div class="order-row">
+        <span class="title">备注</span>
+        <input type="text" placeholder="请留言">
+        <em class="icon-arrow-right"></em>
+      </div>
+      <!--商品总额-->
+      <div class="order-row">
+        <span class="title">商品总额</span>
+        <span class="total">￥1000</span>
+      </div>
+      <!--运费总额-->
+      <div class="order-row">
+        <span class="title">运费总额</span>
+        <span class="total">￥100</span>
+      </div>
+    </div>
+  </section>
+
+  <!--订单底部-->
+  <footer class="order-submit-footer clearfix">
+    <p class="order-total">合计: <span>￥8.55</span></p>
+    <a class="btn-order-submit" href="payment.html">确认提交</a>
+  </footer>
+
+  <!--地址选择弹出页-->
+  <div id="addressPopup" class="weui-popup__container">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+      <div class="popup-top">
+        <a href="javascript:void(0)" class="open-popup" data-target="#addAddressPopup">
+          使用新地址
+        </a>
+      </div>
+      <div class="popup-content">
+        <!--一条地址-->
+        <div class="address-content">
+          <p class="address-name">颜凌文</p>
+          <div class="address-info">
+            <p class="address-phone">18300763503</p>
+            <p class="address-detail">
+              广东省揭阳市普宁市流沙北街道
+              体育园西小区 39幢 好万家药房连锁有限公司 二楼体育园西小区 39幢
+            </p>
+          </div>
+        </div>
+        <!--一条地址-->
+        <div class="address-content">
+          <p class="address-name">颜凌文</p>
+          <div class="address-info">
+            <p class="address-phone">18300763503</p>
+            <p class="address-detail">
+              广东省揭阳市普宁市流沙北街道
+              体育园西小区 39幢 好万家药房连锁有限公司 二楼体育园西小区 39幢
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--底部取消按钮-->
+      <div class="popup-bottom close-popup">
+        取消
+      </div>
+    </div>
+  </div>
+
+  <!--添加地址弹出页-->
+  <div id="addAddressPopup" class="weui-popup__container add-address">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+      <div class="popup-content">
+        <form action="">
+          <div class="input-group">
+            <label for="addName">联系人</label>
+            <input id="addName" type="text" name="addName" placeholder="请输入联系人姓名">
+          </div>
+          <div class="input-group">
+            <label for="addPhone">手机号</label>
+            <input id="addPhone" type="tel" name="addPhone" placeholder="请输入手机号码">
+          </div>
+          <div class="input-group">
+            <label for="addArea">地区</label>
+            <input id="addArea" type="text" name="addArea" readonly placeholder="请选择地区">
+          </div>
+          <div class="textarea-group">
+            <label for="addAddress">详细地址</label>
+            <textarea id="addAddress" style="resize: none" type="text" name="addAddress" placeholder="请输入详细地址，为确保您的物品不会丢失"></textarea>
+          </div>
+          <div class="set-default-address">
+            <a class="icon-select" href="javascript:void(0)">
+              <input  type="checkbox" name="defaultAddress">
+            </a>
+            <label>设为默认收货地址</label>
+          </div>
+        </form>
+      </div>
+      <!--底部按钮-->
+      <div class="popup-bottom">
+        <a class="close-popup" href="javascript:void(0)">取消</a>
+        <a class="open-popup" href="javascript:void(0)" data-target="#addressPopup">保存</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  <script src="js/city-picker.min.js"></script>
+  <script>
+    //    地区选择
+    $("#addArea").cityPicker({
+      title: "请选择地区"
+    });
+    // 设置默认地址
+    $(".set-default-address .icon-select").on("click",function () {
+      $(this).toggleClass("icon-select-true");
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

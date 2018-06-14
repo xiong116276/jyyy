@@ -1,0 +1,14 @@
+.company-data-container .top {
+  border-bottom: 1px solid #d2d2d2; }
+  .company-data-container .top a {
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 0.4rem; }
+    .company-data-container .top a:first-child {
+      border-right: 1px solid #d2d2d2; }
+    .company-data-container .top a.active {
+      color: #ed4529;
+      font-size: 0.16rem; }
+
+/*# sourceMappingURL=company-data.css.map */

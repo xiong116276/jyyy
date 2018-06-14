@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>我的资料</title>
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/my-data.css">
+</head>
+<body>
+
+<section class="logistics-widget">
+  <form action="">
+    <div class="input-group">
+      <label for="userHeadImg">头像</label>
+      <div class="img-box">
+        <input id="userHeadImg" readonly type="file" name="userHeadImg">
+        <img src="images/personal/head_portraits@2x.png" alt="">
+      </div>
+      <em class="icon-arrow-right"></em>
+    </div>
+    <div class="input-group">
+      <label for="userNickname">昵称</label>
+      <input id="userNickname"type="text" name="userNickname">
+      <em class="icon-arrow-right"></em>
+    </div>
+    <div class="input-group">
+      <label for="userName">姓名</label>
+      <input id="userName"type="text" name="userName">
+      <em class="icon-arrow-right"></em>
+    </div>
+    <div class="input-group">
+      <label for="loginPwd">登录密码</label>
+      <input id="loginPwd"type="text" readonly name="loginPwd">
+      <em class="icon-arrow-right"></em>
+    </div>
+    <div class="btn-submit-bottom">
+      保存
+    </div>
+  </form>
+</section>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-weui.js"></script>
+<script>
+  //图片提交预览
+  var imgShowFun=function () {
+    $("input[type = 'file']").on("change",function (e) {
+      var e = e.target;
+      var filelist = e.files;
+      var reader = new FileReader;
+      reader.readAsDataURL(filelist[0]);
+      reader.onload= function () {
+        $(e).siblings("img").attr("src", reader.result);
+      }
+    })
+  }
+  imgShowFun();
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import "mixins";
+body{
+  padding: 0.5rem 0;
+}
+.order-detail-top{
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  top: 0;
+  z-index: 100;
+  height: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &.top-bg-01{
+    background-image: url("../images/personal/detail-top-bg-01.png");
+  }
+  &.top-bg-02{
+    background-image: url("../images/personal/detail-top-bg-02.png");
+  }
+  &.top-bg-03{
+    background-image: url("../images/personal/detail-top-bg-03.png");
+  }
+  span{
+    position: relative;
+    padding-left: 0.35rem;
+  }
+  .icon-order-detail{
+    width: 0.28rem;
+    height: 0.28rem;
+    left: 0;
+    top: -0.04rem;
+  }
+}
+
+//订单收货地址
+.order-detail-address{
+  padding: 0.1rem 0.1rem 0.05rem;
+  @include border-division("top");
+  overflow: hidden;
+  .row-01{
+    margin-bottom: 0.05rem;
+    font-size: 0.15rem;
+    .order-name{
+      max-width: 2rem;
+    }
+  }
+  .row-02{
+    font-size: 0.13rem;
+    @include text-overflow(3);
+  }
+}
+//订单信息
+.order-info{
+  @include border-division("top");
+  height: 0.7rem;
+  padding: 0.1rem;
+  p{
+    line-height: 0.25rem;
+  }
+}
+.arrow-rotate{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+//订单商品
+.order-goods{
+  @include border-division("top");
+}
+.order-store{
+  .store-top{
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.5rem;
+    .icon-arrow-top{
+      top: 0.1rem;
+      width: 0.15rem;
+      right: 0.2rem;
+    }
+  }
+  .goods-item{
+    border-bottom: 1px solid #d2d2d2;
+    margin: 0;
+  }
+}
+.img-store{
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: 0.1rem;
+  left: 0.2rem;
+  img{
+    vertical-align: top;
+  }
+}
+//订单合计
+.order-total{
+  text-align: right;
+  line-height: 0.25rem;
+  .total-widget{
+    padding: 0.1rem 0;
+    padding-right: 0.2rem;
+  }
+  .total-num{
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    padding-right: 0.2rem;
+    line-height: 0.4rem;
+  }
+}
+//底部按钮
+.btn-submit{
+  height: 0.5rem;
+  line-height: 0.5rem;
+  a{
+    float: left;
+    width: 50%;
+    height: 0.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  .btn-order-cancel{
+    background-color: #e2e2e2;
+    color: #333;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
