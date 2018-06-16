@@ -6,9 +6,6 @@
   -ms-behavior: url("./htc/pie.php");
   behavior: url("./htc/pie.php"); }
 
-.search-input {
-  line-height: 33px; }
-
 .top-search-hide #logo_2 {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://shop.dgsjyyy.com/resources/shop/images/logo.png', sizingMethod='scale'); }
